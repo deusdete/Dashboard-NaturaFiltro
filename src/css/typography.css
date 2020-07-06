@@ -28,7 +28,7 @@ Design and Developed by: iqonicthemes.in
 /*---------------------------------------------------------------------
 Google Font
 -----------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 /*---------------------------------------------------------------------
@@ -132,7 +132,7 @@ Heading Title
 -----------------------------------------------------------------------*/
 .button { color: #ffffff; cursor: pointer; padding: 15px 60px; font-weight: 600; font-size: 18px; position: relative;  border: none; z-index: 2; 
 	font-family: 'Josefin Sans', sans-serif; display: inline-block; -webkit-border-radius: 90px; -moz-border-radius: 90px; border-radius: 90px;
-	 background-image: linear-gradient(to right, #0077b6 0%, #00b4d8 51%, #00b4d8 100%); background-size: 200% auto; }
+	 background-image: linear-gradient(to right, #d65619 0%, #f16624 51%, #5d2f90 100%); background-size: 200% auto; }
 .button:hover, .button:focus { color: #ffffff; background-position: right center; }
 .subscribe-btn { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding: 15px 25px; line-height: 25px; }
 .link-button { font-size: 18px; color: #00b4d8; text-transform: capitalize; }

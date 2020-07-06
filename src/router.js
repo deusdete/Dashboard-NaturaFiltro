@@ -11,6 +11,8 @@ import Clientes from './pages/Clientes'
 import Contato from './pages/Contato'
 import Sobre from './pages/Sobre'
 
+import Login from './pages/Login'
+
 export default function Router(){
   return(
     <BrowserRouter>
@@ -25,6 +27,7 @@ export default function Router(){
         <Route path="/compacto" exact component={Compacto} />
         <Route path="/gecert" exact component={Gecert} />
         <Route path="/mensageiro" exact component={Mensageiro} />
+        <Route path="/login" exact component={Login} />
       </Switch>
     </BrowserRouter>
   )

@@ -58,24 +58,26 @@ export default function Header(){
                 </nav>
             </div>
             <div class="col-lg-3 text-right">
-               <ul class="login">
+               <ul class="login d-flex">
+                 <li>
                   <div className="lngSelector dropdown show">                     
-                    <a className=" dropdown-toggle" href="hide-link"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img src={`/images/svg/${flagActive}.svg`} width={30} alt="Kiwi standing on oval"></img>
-                    </a>
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a className="dropdown-item" href="hide-link" onClick={e => handleClick(e,'pt', 'brazil')}>
-                        <img src="/images/svg/brazil.svg" width={30} alt="pt"></img>
+                      <a className=" dropdown-toggle" href="hide-link"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src={`/images/svg/${flagActive}.svg`} width={30} alt="Kiwi standing on oval"></img>
                       </a>
-                      <a className="dropdown-item" href="hide-link" onClick={e => handleClick(e,'en', 'united-states')}>
-                        <img src="/images/svg/united-states.svg" width={30} alt="en"></img>
-                      </a>
-                      <a className="dropdown-item" href="hide-link" onClick={e => handleClick(e,'es', 'spain')}>
-                        <img src="/images/svg/spain.svg" width={30} alt="es"></img>
-                      </a>
+                      <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a className="dropdown-item" href="hide-link" onClick={e => handleClick(e,'pt', 'brazil')}>
+                          <img src="/images/svg/brazil.svg" width={30} alt="pt"></img>
+                        </a>
+                        <a className="dropdown-item" href="hide-link" onClick={e => handleClick(e,'en', 'united-states')}>
+                          <img src="/images/svg/united-states.svg" width={30} alt="en"></img>
+                        </a>
+                        <a className="dropdown-item" href="hide-link" onClick={e => handleClick(e,'es', 'spain')}>
+                          <img src="/images/svg/spain.svg" width={30} alt="es"></img>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  {/* <li class="d-inline active"><a href="register.html" class="login-btn">Login</a></li> */}
+                 </li>
+                  <li class="d-inline active"><Link to="/login" class="login-btn">Login</Link></li>
                </ul>
             </div>
           </div>
