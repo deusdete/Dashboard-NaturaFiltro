@@ -10,6 +10,10 @@ const en = {
   contato: "Contact",
   politicaPrivacidade: "Privacy Policy",
 
+  //Página de Login
+  login: "Login",
+  esqueceuSenha: "Forgot password?",
+
 
   //Fooder
   menu: 'Menu',
@@ -64,7 +68,12 @@ const en = {
   // Sobre a F4CIL
   sobreAf4cil_sub_title: "Technology can be simple",
   nossoCompromisso: "Our compromise",
+  sobre_p1: "F4CIL was born with the purpose of facilitating information technology for our customers.",
+  sobre_p2: "With more than 20 years of experience in offering services in various areas of information technology, we have highly qualified professionals with vast knowledge and availability to make your company work without complications.",
 
-
+  //PoloFácil
+  controleTutoria: "Mentoring Control",
+  importacaoDados : "Online Data Import",
+  controleFinazeiro: "Complete Financial Control",
 }
 export default en;

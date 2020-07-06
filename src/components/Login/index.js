@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next';
 export default function LogiCpm() {
+  const { t, i18n } = useTranslation();
   return (
     <section class="iq-login-regi">
       <div class="container">
@@ -25,11 +26,11 @@ export default function LogiCpm() {
                   <div class="form-group">
                     <input type="password" class="form-control email-bg" id="exampleInputPassword1" placeholder="Senha"></input>
                   </div>
-                  <button type="submit" class="button">Login</button>
+                  <button type="submit" class="button">{t('login')}</button>
                 </form>
                 <div class="row">
                   <div class="col-sm-6">
-                    <a href="#" >Esqueceu a senha?</a>
+                  <a href="#" >{t('esqueceuSenha')}</a>
                   </div>
                   <div class="col-md-6 col-sm-12">
                     <div class="text-right">

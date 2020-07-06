@@ -10,6 +10,10 @@ const es = {
  contato: "Contacto",
  politicaPrivacidade: "Política de privacidad",
 
+ //Página de Login
+ login: "Login",
+ esqueceuSenha: "Olvido la contraseña",
+
 
  //Fooder
  menu: 'Menu',
@@ -65,5 +69,9 @@ const es = {
  sobreAf4cil_sub_title: "La tecnología puede ser simple.",
  nossoCompromisso: "Nuestro compromiso",
 
+ //PoloFácil
+ controleTutoria: "Control de mentoría",
+ importacaoDados : "Importación de datos en línea",
+ controleFinazeiro: "Control financiero completo",
 }
 export default es;

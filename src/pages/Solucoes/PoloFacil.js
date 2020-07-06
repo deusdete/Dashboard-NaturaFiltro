@@ -12,9 +12,9 @@ export default function PoloFacil() {
   const features = [
     {
       textos: [
-        "Controle de Tutoria",
-        "Importação de Dados on-line",
-        "Controle Financeiro completo"
+        "controleTutoria",
+        "importacaoDados",
+        "controleFinazeiro"
       ],
       imagem: "polofacil/image_2.webp",
     },

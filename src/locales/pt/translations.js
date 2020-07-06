@@ -11,6 +11,10 @@ const pt = {
   contato: "Contato",
   politicaPrivacidade: "Política de Privacidade",
 
+  //Página de Login
+  login: "Login",
+  esqueceuSenha: "Esqueceu a senha?",
+
 
   //Fooder
   menu: 'Menu',
@@ -65,6 +69,11 @@ const pt = {
   // Sobre a F4CIL
   sobreAf4cil_sub_title: "A tecnologia pode ser simples",
   nossoCompromisso: "Nosso compromisso",
+
+  //PoloFácil
+  controleTutoria: "Controle de Tutoria",
+  importacaoDados : "Importação de Dados on-line",
+  controleFinazeiro: "Controle Finazeiro Completo",
 
   
 

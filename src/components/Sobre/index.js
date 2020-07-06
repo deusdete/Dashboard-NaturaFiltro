@@ -38,10 +38,10 @@ export default function SobreComp() {
                   </div>
                   <div class="col-lg-6  col-md-6 text-left align-self-center">
                     
-                    <h3 class="font-weight-bold">Sobre-nós</h3>
+                    <h3 class="font-weight-bold">{t('sobreNos')}</h3>
                     <p class="mt-4"></p>
-                    <p>A F4CIL nasceu com a finalidade de facilitar a informática para nossos clientes.</p>
-                    <p>Com mais de 20 anos de experiência em oferecer serviços nas diversas área da tecnologia da informação, dispomos de profissionais altamente gabaritados com vasto conhecimento e disponibilidade para que sua empresa funcione sem complicação.</p> 
+                    <p>{t('sobre_p1')}</p>
+                    <p>{t('sobre_p2')}</p> 
                   </div>
                 </div>
               </div>

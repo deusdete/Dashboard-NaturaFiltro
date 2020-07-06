@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { useTranslation } from 'react-i18next';
 export default function ProductFeature(props) {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <section className="iq-challanges ">
@@ -46,7 +47,7 @@ export default function ProductFeature(props) {
                     <p className="mt-3 text-white">
                       {item.textos.map(text => (
                         <>
-                          {text}<br></br>
+                          {t(text)}<br></br>
                         </>
                       ))}
                     </p>
