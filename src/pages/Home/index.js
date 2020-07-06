@@ -7,42 +7,26 @@ import Clientes from '../../components/Clientes'
 import './home.css'
 import bg1 from '../../assets/revslider/5e86b-integracao-whatsapp-shap.png'
 import p1 from '../../assets/revslider/integracao-whatsapp-b36bd-03.png'
+import Breadcrumb from '../../components/Breadcrumb'
 import { useTranslation } from 'react-i18next';
 export default function Home(){
   const { t, i18n } = useTranslation();
   return (
     <>
       <Header/>
-      <section class="iq-breadcrumb">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h2 class="text-white mb-3">{t('home')}</h2>
-                  <nav aria-label="breadcrumb" >
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">{t('home')}</a></li>
-                      {/* <li class="breadcrumb-item active" aria-current="page">Clientes</li> */}
-                    </ol>
-                  </nav>
-                </div>
-                  <div class="col-lg-6 d-flex justify-content-end breadcrumb-image">
-                  {/* <img src="images/breadcrumb/01.png" class="img-fluid" alt="images">  */}
-                </div>
-              </div>
+        <Breadcrumb title="home"/>
+        <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_6_1_forcefullwidth" >
+          <div id="rev_slider_6_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container revWampper" data-alias="security" >
+          <div id="rev_slider_6_1" class="rev_slider fullwidthabanner tp-overflow-hidden" style={{display: 'none'}} data-version="5.2.6">
+              <ul>
+                <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
+                <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
+                <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
+              </ul>
             </div>
-          </section>
-      <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_6_1_forcefullwidth" >
-        <div id="rev_slider_6_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container revWampper" data-alias="security" >
-         <div id="rev_slider_6_1" class="rev_slider fullwidthabanner tp-overflow-hidden" style={{display: 'none'}} data-version="5.2.6">
-            <ul>
-              <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
-              <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
-              <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
-            </ul>
           </div>
         </div>
-      </div>
-      <section class="iq-about pt-5 ">
+        <section class="iq-about pt-5 ">
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">

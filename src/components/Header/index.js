@@ -42,16 +42,16 @@ export default function Header(){
                               <Link class="nav-link active" to="/">{t('home')}</Link>
                            </li>
                            <li class="nav-item">
-                              <Link class="nav-link" to="solucoes">{t('solucoes')}</Link>
+                              <Link class="nav-link" to="/solucoes">{t('solucoes')}</Link>
                            </li>
                            <li class="nav-item">
-                              <Link class="nav-link" to="clientes">{t('clientes')}</Link>
+                              <Link class="nav-link" to="/clientes">{t('clientes')}</Link>
                            </li>
                            <li class="nav-item">
-                              <Link class="nav-link" to="contato">{t('contato')}</Link>
+                              <Link class="nav-link" to="/contato">{t('contato')}</Link>
                            </li>
                            <li class="nav-item">
-                              <Link class="nav-link" to="sobre-nos">{t('sobreNos')}</Link>
+                              <a class="nav-link" href="/sobre-nos">{t('sobreNos')}</a>
                            </li>
                         </ul>
                      </div>

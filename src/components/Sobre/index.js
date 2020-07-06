@@ -40,7 +40,7 @@ export default function SobreComp() {
                     
                     <h3 class="font-weight-bold">Sobre-nós</h3>
                     <p class="mt-4"></p>
-                    <p>A VSE Tecnologia nasceu com a finalidade de facilitar a informática para nossos clientes.</p>
+                    <p>A F4CIL nasceu com a finalidade de facilitar a informática para nossos clientes.</p>
                     <p>Com mais de 20 anos de experiência em oferecer serviços nas diversas área da tecnologia da informação, dispomos de profissionais altamente gabaritados com vasto conhecimento e disponibilidade para que sua empresa funcione sem complicação.</p> 
                   </div>
                 </div>
@@ -125,11 +125,11 @@ export default function SobreComp() {
                     <li class=" selected " data-date="05/01/2014" >
                       <h3 class="iq-fw-8 mb-3">História de Experiência e Credibilidade</h3>
                       <p class="mb-0">Fundada em Janeiro de 2008, acumulamos, junto com a experiência de nossos fundadores, mais de 30 anos de experiência  no mercado de Desenvolvimento de Softwares, Aplicativos e Soluções em TI, sempre focados em simplificar a vida de nossos clientes.</p>
-                      <p class="mb-0">A VSE Tecnologia é registrada junto a SEFAZ-PE com empresa Interventora credenciada. Com este registro estávamos habilitados a: Vender, Realizar A Inicialização de Uso, Intervenções e Cessação e uso em ECFs (Emissor de Cupons Fiscais). Conseguimos também neste ano a Homologação para trabalhar com Softwares de Automação.</p>
+                      <p class="mb-0">A F4CIL é registrada junto a SEFAZ-PE com empresa Interventora credenciada. Com este registro estávamos habilitados a: Vender, Realizar A Inicialização de Uso, Intervenções e Cessação e uso em ECFs (Emissor de Cupons Fiscais). Conseguimos também neste ano a Homologação para trabalhar com Softwares de Automação.</p>
                     </li>
                     <li  data-date="16/02/2014" >
                      <h3 class="iq-fw-8 mb-3">2009</h3>
-                     <p class="mb-0">Foi um marco na história da VSE Tecnologia. O Governo lançou a Portaria 1510 do Ministério do Trabalho e Emprego, que regulamentou o uso do Ponto Eletrônico nas empresas. A VSE, que já possuia experiência como revenda e suporte de sistemas de ponto, partiu para o desenvolvimento de uma solução própria para atender a P1510 na íntegra.</p>
+                     <p class="mb-0">Foi um marco na história da F4CIL. O Governo lançou a Portaria 1510 do Ministério do Trabalho e Emprego, que regulamentou o uso do Ponto Eletrônico nas empresas. A F4CIL, que já possuia experiência como revenda e suporte de sistemas de ponto, partiu para o desenvolvimento de uma solução própria para atender a P1510 na íntegra.</p>
                      <p class="mb-0">O desafio foi criar uma ferramenta que, ao contrário dos sitemas conhecidos, tivesse como principal característica a facilidade de uso, sem abrir mão da confiabilidade e eficiência. Surgiu assim o PHPonto.</p>
                    </li>
                    <li  data-date="16/03/2014" >
@@ -169,7 +169,7 @@ export default function SobreComp() {
                    </li>
                    <li  data-date="16/11/2014" >
                      <h3 class="iq-fw-8 mb-3">2018</h3>
-                     <p class="mb-0">Uma equipe da VSE vai até Tabatinga - AM, para implantar o PoloFacil no Polo da UNIP - Tabatinga - AM. Consolidando nossa liderança  em softwares para Gerenciamento de Polos EAD. Iniciamos também o projeto topvix.com.br com integração com WhatsApp  com envio automático de mensgens</p>
+                     <p class="mb-0">Uma equipe da F4CIL vai até Tabatinga - AM, para implantar o PoloFacil no Polo da UNIP - Tabatinga - AM. Consolidando nossa liderança  em softwares para Gerenciamento de Polos EAD. Iniciamos também o projeto topvix.com.br com integração com WhatsApp  com envio automático de mensgens</p>
                    </li>
                    <li  data-date="16/12/2014" >
                      <h3 class="iq-fw-8 mb-3">2019</h3>
@@ -178,7 +178,7 @@ export default function SobreComp() {
                   </li>
                    <li  data-date="16/01/2015" >
                      <h3 class="iq-fw-8 mb-3">2020</h3>
-                     <p class="mb-0">Apesar da pandemia do COVID-19 a VSE tem atuado em diversos projetos este ano. Desenvolvemos a versão Android do Meu PHPonto para que os funcionários das empresas clientes que estivessem trabalhando em home-office pudessem realizar a solicitação de marcação do ponto sem prejuízo das horas trabalhadas;</p>
+                     <p class="mb-0">Apesar da pandemia do COVID-19 a F4CIL tem atuado em diversos projetos este ano. Desenvolvemos a versão Android do Meu PHPonto para que os funcionários das empresas clientes que estivessem trabalhando em home-office pudessem realizar a solicitação de marcação do ponto sem prejuízo das horas trabalhadas;</p>
                      <p class="mb-0">Lançamos o portal phponto.com.br para facilitar o gerenciamento do RH; Lançamos o Mensageiro - Software de envio de mensagens via WhatsApp, SMS  e-mails automáticos e o GeCert um gerador de certificados com envio de e-mail, ótimo para cursos, treinamentos, palestrantes, escolas etc. Lançamento do Persona Test.</p>
                   </li>
                   </ol>
@@ -319,7 +319,7 @@ export default function SobreComp() {
                            <div class="text-center testimonial">
                               <div class=" big-text mb-5"> <i class="fa fa-quote-right"></i></div>
                               <div class="iq-testimonial-info">
-                                 <p class="mb-5">Somos clientes da VSE TECNOLOGIA e recomendamos esta empresa pela seriedade, pelo pronto atendimento, precisão e pontualidade nos prazos acordados, sempre com respostas rápidas e com soluções tecnológicas agregando valor ao nosso negócio. Márcio Damasceno - MAPROTEC ENGENHARIA.</p>
+                                 <p class="mb-5">Somos clientes da F4CIL e recomendamos esta empresa pela seriedade, pelo pronto atendimento, precisão e pontualidade nos prazos acordados, sempre com respostas rápidas e com soluções tecnológicas agregando valor ao nosso negócio. Márcio Damasceno - MAPROTEC ENGENHARIA.</p>
                                  <div class="author">
                                     <div class="author-img">
                                        <img src={require('../../assets/images/testimonial/marcio-01.jpg')} alt="img" class="img-fluid"></img>
@@ -335,7 +335,7 @@ export default function SobreComp() {
                            <div class="text-center testimonial">
                               <div class=" big-text mb-5"> <i class="fa fa-quote-right"></i></div>
                               <div class="iq-testimonial-info">
-                                 <p class="mb-5">A VSE Tecnologia facilita nossa rotina diária com suas soluções, além de automatizar operações que antes demandavam tempo. O PHPonto por exempo, sua principal característica esta na facilidade de uso e na rápida curva de aprendizagem . Totalmente intuitivo e simples. Adorei!!!</p>
+                                 <p class="mb-5">A F4CIL facilita nossa rotina diária com suas soluções, além de automatizar operações que antes demandavam tempo. O PHPonto por exempo, sua principal característica esta na facilidade de uso e na rápida curva de aprendizagem . Totalmente intuitivo e simples. Adorei!!!</p>
                                  <div class="author">
                                     <div class="author-img">
                                        <img src={require('../../assets/images/testimonial/samara-01.jpg')} alt="img" class="img-fluid"></img>
@@ -351,7 +351,7 @@ export default function SobreComp() {
                            <div class="text-center testimonial">
                               <div class=" big-text mb-5"> <i class="fa fa-quote-right"></i></div>
                               <div class="iq-testimonial-info">
-                                 <p class="mb-5">Soluções sensacionais, simples, facil de usar, é o que a VSE Tecnlogia promove. a equipe de suporte é maravilhosa e nos atende nde maneira rápida e muito segura. O PHPonto, foi o único software que atendeu 100% de acordo com as exigências do Ministério do Trabalho</p>
+                                 <p class="mb-5">Soluções sensacionais, simples, facil de usar, é o que a F4CIL Tecnlogia promove. a equipe de suporte é maravilhosa e nos atende nde maneira rápida e muito segura. O PHPonto, foi o único software que atendeu 100% de acordo com as exigências do Ministério do Trabalho</p>
                                  <div class="author">
                                     <div class="author-img">
                                        <img src={require('../../assets/images/testimonial/marcos-01.jpg')} alt="img" class="img-fluid"></img>
