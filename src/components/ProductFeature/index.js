@@ -10,7 +10,7 @@ export default function ProductFeature(props) {
           <div className="row">
               <div className="col-sm-12">
                 <div className="title-box">
-                  <h2 className="title">Compra Garantida com o Mercado Pago</h2>
+                  <h2 className="title">{t('productFeature_title')}</h2>
                   <p className="sub-title">Receba o produto que está esperando ou devolvemos o seu dinheiro</p>
                 </div>
               </div>
