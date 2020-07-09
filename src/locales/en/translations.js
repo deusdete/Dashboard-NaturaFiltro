@@ -113,9 +113,28 @@ const en = {
    //Nosso Time 
    Nosso_Time:"Our team",
    Nosso_Time_p1:"See who makes your project happen.",
-  //PoloFácil
+ 
+  //Nossos Clientes
+  Nossos_Clientes:"Our clients",
+  Nossos_Clientes_p1: "Some of our Satisfied Customers",
+  Nossos_Clientes_MAPROTEC:"We are F4CIL customers and we recommend this company for its seriousness, prompt service, precision and punctuality within the agreed deadlines, always with quick responses and technological solutions adding value to our business. Márcio Damasceno - MAPROTEC ENGENHARIA.",
+  Nossos_Clientes_Cruzeiro:"F4CIL facilitates our daily routine with its solutions, in addition to automating operations that used to take time. PHPonto for example, its main feature is its ease of use and fast learning curve. Totally intuitive and simple. I loved it!!!",
+  Nossos_Clientes_Prefeitura_terra:"Sensational solutions, simple, easy to use, is what F4CIL Tecnlogia promotes. the support team is wonderful and assists us in a fast and very secure way. PHPonto, was the only software that met 100% according to the requirements of the Ministry of Labor",
+  Nossos_Clientes_Prefeitura_Serrita:"It is the certainty that you can count on the best in the market. It goes beyond meeting customer needs. She is a friend and partner! All requested demands were met in time. Excellent technical support, always ready to answer. Thank you very much for the partnership and success always!",
+  
+   //PoloFácil
   controleTutoria: "Mentoring Control",
   importacaoDados : "Online Data Import",
   controleFinazeiro: "Complete Financial Control",
+
+   //ProductFeature
+
+   productFeature_title: "Guaranteed Purchase with Mercado Pago",
+   productFeature_title_p1:"Receive the product you are waiting for or we will refund your money",
+ 
+   Formas_de_pagamento:"Payment methods",
+   Formas_de_pagamento_p1:"Credit cards, debit cards, bank slip",
+   Comprar:"Purchase",
+ 
 }
 export default en;

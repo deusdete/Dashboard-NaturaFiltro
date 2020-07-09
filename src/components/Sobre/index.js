@@ -306,8 +306,8 @@ export default function SobreComp() {
                <div class="row">
                   <div class="col-sm-12">
                      <div class="title-box">
-                        <h2 class="title text-black">Nossos Clientes</h2>
-                        <p class="sub-title">Alguns de nossos Satisfeitos Clientes</p>
+                        <h2 class="title text-black">{t('Nossos_Clientes')}</h2>
+                        <p class="sub-title">{t('Nossos_Clientes_p1')}</p>
                      </div>
                   </div>
                </div>
@@ -318,7 +318,7 @@ export default function SobreComp() {
                            <div class="text-center testimonial">
                               <div class=" big-text mb-5"> <i class="fa fa-quote-right"></i></div>
                               <div class="iq-testimonial-info">
-                                 <p class="mb-5">Somos clientes da F4CIL e recomendamos esta empresa pela seriedade, pelo pronto atendimento, precisão e pontualidade nos prazos acordados, sempre com respostas rápidas e com soluções tecnológicas agregando valor ao nosso negócio. Márcio Damasceno - MAPROTEC ENGENHARIA.</p>
+                                      <p class="mb-5">{t('Nossos_Clientes_MAPROTEC')}</p>
                                  <div class="author">
                                     <div class="author-img">
                                        <img src={require('../../assets/images/testimonial/marcio-01.jpg')} alt="img" class="img-fluid"></img>
@@ -334,7 +334,7 @@ export default function SobreComp() {
                            <div class="text-center testimonial">
                               <div class=" big-text mb-5"> <i class="fa fa-quote-right"></i></div>
                               <div class="iq-testimonial-info">
-                                 <p class="mb-5">A F4CIL facilita nossa rotina diária com suas soluções, além de automatizar operações que antes demandavam tempo. O PHPonto por exempo, sua principal característica esta na facilidade de uso e na rápida curva de aprendizagem . Totalmente intuitivo e simples. Adorei!!!</p>
+                                  <p class="mb-5">{t('Nossos_Clientes_Cruzeiro')}</p>
                                  <div class="author">
                                     <div class="author-img">
                                        <img src={require('../../assets/images/testimonial/samara-01.jpg')} alt="img" class="img-fluid"></img>
@@ -350,7 +350,7 @@ export default function SobreComp() {
                            <div class="text-center testimonial">
                               <div class=" big-text mb-5"> <i class="fa fa-quote-right"></i></div>
                               <div class="iq-testimonial-info">
-                                 <p class="mb-5">Soluções sensacionais, simples, facil de usar, é o que a F4CIL Tecnlogia promove. a equipe de suporte é maravilhosa e nos atende nde maneira rápida e muito segura. O PHPonto, foi o único software que atendeu 100% de acordo com as exigências do Ministério do Trabalho</p>
+                                    <p class="mb-5">{t('Nossos_Clientes_Prefeitura_terra')}</p>
                                  <div class="author">
                                     <div class="author-img">
                                        <img src={require('../../assets/images/testimonial/marcos-01.jpg')} alt="img" class="img-fluid"></img>
@@ -366,7 +366,7 @@ export default function SobreComp() {
                            <div class="text-center testimonial">
                               <div class=" big-text mb-5"> <i class="fa fa-quote-right"></i> </div>
                               <div class="iq-testimonial-info">
-                                 <p class="mb-5">É a certeza de puder contar com o que tem de melhor no mercado. Vai além de atender as necessidades do cliente. É amiga e parceira! Todas as demandas solicitadas foram atendidas em tempo. Suporte técnico excelente, sempre pronto a atender. Muito obrigado pela parceria e sucesso sempre!</p>
+                                  <p class="mb-5">{t('Nossos_Clientes_Prefeitura_Serrita')}</p>
                                  <div class="author">
                                     <div class="author-img">
                                        <img src={require('../../assets/images/testimonial/flavio-01.jpg')} alt="img" class="img-fluid"></img>

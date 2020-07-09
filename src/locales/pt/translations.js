@@ -115,7 +115,14 @@ const pt = {
   //Nosso Time 
   Nosso_Time:"Nosso Time",
   Nosso_Time_p1:"Veja quem faz o seu projeto acontecer.",
-  
+
+  //Nossos Clientes
+  Nossos_Clientes:"Nossos Clientes",
+  Nossos_Clientes_p1: "Alguns de nossos Satisfeitos Clientes",
+  Nossos_Clientes_MAPROTEC:"Somos clientes da F4CIL e recomendamos esta empresa pela seriedade, pelo pronto atendimento, precisão e pontualidade nos prazos acordados, sempre com respostas rápidas e com soluções tecnológicas agregando valor ao nosso negócio. Márcio Damasceno - MAPROTEC ENGENHARIA.",
+  Nossos_Clientes_Cruzeiro:"A F4CIL facilita nossa rotina diária com suas soluções, além de automatizar operações que antes demandavam tempo. O PHPonto por exempo, sua principal característica esta na facilidade de uso e na rápida curva de aprendizagem . Totalmente intuitivo e simples. Adorei!!!",
+  Nossos_Clientes_Prefeitura_terra:"Soluções sensacionais, simples, facil de usar, é o que a F4CIL Tecnlogia promove. a equipe de suporte é maravilhosa e nos atende nde maneira rápida e muito segura. O PHPonto, foi o único software que atendeu 100% de acordo com as exigências do Ministério do Trabalho",
+  Nossos_Clientes_Prefeitura_Serrita:"É a certeza de puder contar com o que tem de melhor no mercado. Vai além de atender as necessidades do cliente. É amiga e parceira! Todas as demandas solicitadas foram atendidas em tempo. Suporte técnico excelente, sempre pronto a atender. Muito obrigado pela parceria e sucesso sempre!",
   //PoloFácil
   controleTutoria: "Controle de Tutoria",
   importacaoDados : "Importação de Dados on-line",
@@ -124,6 +131,11 @@ const pt = {
   //ProductFeature
 
   productFeature_title: "Compra Garantida com o Mercado Pago",
+  productFeature_title_p1:"Receba o produto que está esperando ou devolvemos o seu dinheiro",
+
+  Formas_de_pagamento:"Formas de pagamento",
+  Formas_de_pagamento_p1:"Cartões de crédito, cartões de débito, boleto bancário",
+  Comprar:"Comprar",
 
   
 

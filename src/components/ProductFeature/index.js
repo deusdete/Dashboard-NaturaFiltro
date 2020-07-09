@@ -10,8 +10,8 @@ export default function ProductFeature(props) {
           <div className="row">
               <div className="col-sm-12">
                 <div className="title-box">
-                  <h2 className="title">{t('productFeature_title')}</h2>
-                  <p className="sub-title">Receba o produto que está esperando ou devolvemos o seu dinheiro</p>
+                  <h2 className="title text-black">{t('productFeature_title')}</h2>
+                  <p className="sub-title text-black">{t('productFeature_title_p1')}</p>
                 </div>
               </div>
           </div>
@@ -22,9 +22,9 @@ export default function ProductFeature(props) {
                   <img src={require('../../assets/images/payment/cards.png')} className="img-fluid mb-2" alt=""></img>
                 </div>
                 <div className="info-box ">
-                  <h4 className="mb-2">Formas de pagamento</h4>
-                  <p>Cartões de crédito, cartões de débito, boleto bancário</p>
-                  <a className="button mt-3" target="_blank"  href={props.linkCompra} className="link-button">Comprar</a>
+                  <h4 className="mb-2">{t('Formas_de_pagamento')}</h4>
+                   <p>{t('Formas_de_pagamento_p1')}</p>
+                      <a className="button mt-3" target="_blank"  href={props.linkCompra} className="link-button">{t('Comprar')}</a>
                 </div>
               </div>
             </div>

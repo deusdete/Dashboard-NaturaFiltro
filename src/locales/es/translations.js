@@ -112,9 +112,28 @@ const es = {
    //Nosso Time 
   Nosso_Time:"Nuestro equipo",
   Nosso_Time_p1:"Vea quién hace que su proyecto suceda.",
+ 
+  //Nossos Clientes
+  Nossos_Clientes:"Nuestros clientes",
+  Nossos_Clientes_p1: "Algunos de nuestros clientes satisfechos",
+  Nossos_Clientes_MAPROTEC:"Somos clientes de F4CIL y recomendamos a esta empresa por su seriedad, servicio rápido, precisión y puntualidad dentro de los plazos acordados, siempre con respuestas rápidas y soluciones tecnológicas que agreguen valor a nuestro negocio. Márcio Damasceno - MAPROTEC ENGENHARIA.",
+  Nossos_Clientes_Cruzeiro:"F4CIL facilita nuestra rutina diaria con sus soluciones, además de automatizar operaciones que solían llevar tiempo. PHPonto, por ejemplo, su característica principal es su facilidad de uso y su rápida curva de aprendizaje. Totalmente intuitivo y simple. me encantó!!!",
+  Nossos_Clientes_Prefeitura_terra:"Soluciones sensacionales, simples, fáciles de usar, es lo que promueve F4CIL Tecnlogia. El equipo de soporte es maravilloso y nos ayuda de manera rápida y muy segura. PHPonto, fue el único software que cumplió al 100% de acuerdo con los requisitos del Ministerio de Trabajo",
+  Nossos_Clientes_Prefeitura_Serrita:"Es la certeza de que puede contar con los mejores del mercado. Va más allá de satisfacer las necesidades del cliente. Ella es una amiga y compañera! Todas las demandas solicitadas se cumplieron a tiempo. Excelente soporte técnico, siempre listo para responder. ¡Muchas gracias por la colaboración y el éxito siempre!",
+  
   //PoloFácil
  controleTutoria: "Control de mentoría",
  importacaoDados : "Importación de datos en línea",
  controleFinazeiro: "Control financiero completo",
+
+  //ProductFeature
+
+  productFeature_title: "Compra garantizada con Mercado Pago",
+  productFeature_title_p1:"Reciba el producto que está esperando o le devolveremos su dinero",
+
+  Formas_de_pagamento:"Formas de pago",
+  Formas_de_pagamento_p1:"Tarjetas de crédito, tarjetas de débito, recibo bancario",
+  Comprar:"Compra",
+
 }
 export default es;
