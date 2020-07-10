@@ -147,7 +147,60 @@ const pt = {
   Importando_os_contatos:"Importando os contatos do seu Smartphone você elimina a tarefa chata de ficar selecionando os destinatários e enviando aos poucos.",
   Faça:"Faça como as grandes empresas e apareça para um grande número de pessoas em qualquer lugar.",
   Envio:"Envio de: Imagens, Videos, Aquivos e Áudios",
-  //ProductFeature
+
+  //PHPONTO
+  Desenvolvido:"Desenvolvido para atender na íntegra a Portaria 1510 do Ministério do Trabalho e Emprego, o PHPONTO oferece ao gestor de Recursos Humanos uma excelente ferramenta de gerenciamento do Ponto.",
+  Por_causa_da_sua_interface:"Por causa da sua interface (telas) limpa e compreensível, o operador aprende rapidamente todas as funções do software, reduzindo bastante o tempo de assimilação e a necessidade de novos treinamentos. Isto significa economia de tempo e dinheiro.",
+ 
+ //MENSAGEIRO
+ Para_vender_bastante:"Para vender bastante você precisa fazer contato com um número enorme de pessoas e empresas e nem sempre o tempo é favorável. Pensando nisso, desenvolvemos um sistema para auxiliar profissionais autônomos e empresas de qualquer tamanho nesta tarefa.",
+ Enquanto_você:"Enquanto você faz outras atividades, o Mensageiro entrega sua propaganda ou mensagem a milhares de pessoas. Você pode enviar diversos anexos como, documentos do Word, planilhas, PDF, imagens, fotos, contatos e tudo que o canal escolhido permitir.", 
+ Faça_como_as_grandes_empresas:"Faça como as grandes empresas e apareça para um grande número de pessoas em qualquer lugar.",
+ Envio_de: "Envio de: Imagens, Videos, Aquivos e Áudios",
+
+ //GECERT
+ Escolas:"Escolas",
+ Polos_EAD:"Polos EAD",
+ Cursos:"Cursos",
+ Treinamentos:"Treinamentos",
+ Funcionamento_bastante_simples:"Funcionamento bastante simples, basta selecionar uma imagem correspondente ao modelo de certificado e importar um arquivo com uma listagem de nomes",
+ Ideal:"Ideal para quem precisa imprimir vários Certificados de uma vez.",
+ 
+ //Compacto
+
+ Funciona_em_rede:"1. Funciona em rede.",
+ Cadastro_de_Usuários:"2. Cadastro de Usuários e controle de acesso",
+ Cadastro_de_Pessoas:"3.Cadastro de Pessoas (Clientes, Funcionários, Fornecedores)",
+ Cadastro_de_Transportadoras:"4.Cadastro de Transportadoras",
+ Cadastro_de_Vendedores:"5.Cadastro de Vendedores",
+ Cadastro_de_Centro_de_Custo:"6.Cadastro de Centro de Custo, Forma de Pagamento e Conta",
+
+ Contas_à_Pagar: "7.Contas à Pagar",
+ Contas_à_Receber:"8.Contas à Receber",
+ Livro_Caixa:"9.Livro Caixa",
+
+ Carnê:"13.Carnê",
+ Cadastro_de_Produtos:"14.Cadastro de Produtos",
+ Inventário_de_Estoque:"15.Inventário de Estoque",
+ Movimentação_Física_dos_Produtos:"16.Movimentação Física dos Produtos",
+ Orçamento:"17.Orçamento",
+
+ Pedido_de_Venda:"18.Pedido de Venda",
+ Venda_de_Balcão:"19.Venda de Balcão - PDV - Frente de Loja",
+ Compras:"20.Compras",
+ Pesquisa_de_notas:"21. Pesquisa de notas emitidas contra o CNPJ (Aceitar ou desconhecer).",
+ Baixa_automática_de_XML:"22. Baixa automática de XML, Leitura de XML de forma ágil (Manifesto, aceitar e desconhecer)",
+ Emissão_de_NFCe:"23.Emissão de NFC-e / de NF-E 4.0 / CT-Os / MDF-e / CT-e/Nota Fiscal do Produtor",
+ Sped_Fiscal:"24. Sped Fiscal / Sped Contribuições / Sintegra",
+
+ Backup:"25.Backup",
+ Relatórios:"26.Relatórios;",
+ Ordem_de_Serviço:"27. Ordem de Serviço",
+ Etiqueta:"28. Etiqueta Argox e Zebra",
+ Busca:"29. Busca dados de empresa pelo CNPJ",
+ Tela:"30. Tela de delivery",
+ SAT:"31. SAT",
+ //ProductFeature
 
   productFeature_title: "Compra Garantida com o Mercado Pago",
   productFeature_title_p1:"Receba o produto que está esperando ou devolvemos o seu dinheiro",

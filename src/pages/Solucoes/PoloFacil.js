@@ -20,16 +20,11 @@ export default function PoloFacil() {
     },
     {
       textos: [
-<<<<<<< HEAD
+
         "Contas_a_Parar",
         "Contas_a_Receber",
-        "Controle_de_Pagamentos_do_alunos",
-=======
-        "contasPagar",
-        "Contas a Receber",
-        "Controle de Pagamentos do alunos",
->>>>>>> c4680dc2fafeab4beaca6116e0b50915c92438b7
-        
+        "Controle_de_Pagamentos_do_alunos"
+
       ],
       imagem: "polofacil/image_2.webp",
     },

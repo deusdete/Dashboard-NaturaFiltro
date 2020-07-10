@@ -13,7 +13,7 @@ export default function Phponto() {
     {
       textos: [
         "Escolas",
-        "Polos EAD",
+        "Polos_EAD",
         "Cursos",
         "Treinamentos",
       ],
@@ -21,13 +21,13 @@ export default function Phponto() {
     },
     {
       textos: [
-        "Funcionamento bastante simples, basta selecionar uma imagem correspondente ao modelo de certificado e importar um arquivo com uma listagem de nomes",
+        "Funcionamento_bastante_simples",
       ],
       imagem: "gecert/image_2.webp",
     },
     {
       textos:[
-        "Ideal para quem precisa imprimir vários Certificados de uma vez.",
+        "Ideal",
       ],
       imagem: "gecert/image_3.webp",
     },

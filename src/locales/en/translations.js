@@ -142,7 +142,60 @@ const en = {
   Faça:"Do like big companies and appear to a large number of people anywhere.",
   Envio:"Sending of: Images, Videos, Files and Audios",
 
-   //ProductFeature
+   //PHPONTO
+   Desenvolvido:"Developed to fully comply with Ordinance 1510 of the Ministry of Labor and Employment, PHPONTO offers the Human Resources manager an excellent point management tool.",
+   Por_causa_da_sua_interface:"Because of its clean and understandable interface (screens), the operator quickly learns all the functions of the software, greatly reducing the assimilation time and the need for new training. This means saving time and money.",
+
+   //MENSAGEIRO
+Para_vender_bastante:"To sell a lot you need to make contact with a huge number of people and companies and the weather is not always favorable. With that in mind, we developed a system to assist freelance professionals and companies of any size in this task.",
+Enquanto_você:"While you do other activities, the Messenger delivers your advertisement or message to thousands of people. You can send different attachments such as Word documents, spreadsheets, PDF, images, photos, contacts and everything that the chosen channel allows.", 
+Faça_como_as_grandes_empresas:"Do like big companies and appear to a large number of people anywhere.",
+Envio_de: "Sending of: Images, Videos, Files and Audios",
+
+//GECERT
+Escolas:"Schools",
+Polos_EAD:"EAD Poles",
+Cursos:"Courses",
+Treinamentos:"Trainings",
+Funcionamento_bastante_simples:"Very simple operation, just select an image corresponding to the certificate template and import a file with a list of names",
+Ideal:"Ideal for those who need to print multiple Certificates at once.",
+
+//Compacto
+
+Funciona_em_rede:"1. Networked.",
+Cadastro_de_Usuários:"2.User Registration and Access Control",
+Cadastro_de_Pessoas:"3.Registration of People (Customers, Employees, Suppliers) ",
+Cadastro_de_Transportadoras:"4.Carrier Registration",
+Cadastro_de_Vendedores:"5.Seller Registration",
+Cadastro_de_Centro_de_Custo:"6.Cost Center Registration, Payment Method and Account",
+
+Contas_à_Pagar: "7. Accounts Payable",
+Contas_à_Receber:"8. Accounts Receivable",
+Livro_Caixa:"9.Book Box",
+
+Carnê:"13.Beef",
+Cadastro_de_Produtos:"14.Product Registration",
+Inventário_de_Estoque:"15. Inventory Inventory",
+Movimentação_Física_dos_Produtos:"16. Physical Movement of Products",
+Orçamento:"17. Budget",
+
+Pedido_de_Venda:"18. Sales Order",
+Venda_de_Balcão:"19. Counter Sales - POS - Store Front",
+Compras:"20. Purchasing",
+Pesquisa_de_notas:"21. Search for notes issued against CNPJ (Accept or not to know).",
+Baixa_automática_de_XML:"22. Automatically download XML, Read XML quickly (Manifest, accept and ignore)",
+Emissão_de_NFCe:"23. Issuance of NFC-e / NF-E 4.0 / CT-Os / MDF-e / CT-e / Producer's invoice",
+Sped_Fiscal:"24. Sped Fiscal / Sped Contribuições / Sintegra",
+
+Backup:"25.Backup",
+Relatórios:"26.Reports;",
+Ordem_de_Serviço:"27. Service Order",
+Etiqueta:"28. Argox and Zebra tag",
+Busca:"29. Search company data by CNPJ",
+Tela:"30. Delivery screen",
+SAT:"31. SAT",
+
+//ProductFeature
 
    productFeature_title: "Guaranteed Purchase with Mercado Pago",
    productFeature_title_p1:"Receive the product you are waiting for or we will refund your money",

@@ -12,20 +12,20 @@ export default function Phponto() {
   const features = [
     {
       textos: [
-        "Para vender bastante você precisa fazer contato com um número enorme de pessoas e empresas e nem sempre o tempo é favorável. Pensando nisso, desenvolvemos um sistema para auxiliar profissionais autônomos e empresas de qualquer tamanho nesta tarefa.",
+        "Para_vender_bastante",
       ],
       imagem: "mensageiro/image_1.webp",
     },
     {
       textos: [
-        "Enquanto você faz outras atividades, o Mensageiro entrega sua propaganda ou mensagem a milhares de pessoas. Você pode enviar diversos anexos como, documentos do Word, planilhas, PDF, imagens, fotos, contatos e tudo que o canal escolhido permitir.",
+        "Enquanto_você",
       ],
       imagem: "mensageiro/image_2.webp",
     },
     {
       textos: [
-        "Faça como as grandes empresas e apareça para um grande número de pessoas em qualquer lugar.",
-        "Envio de: Imagens, Videos, Aquivos e Áudios"
+        "Faça_como_as_grandes_empresas",
+        "Envio_de",
       ],
       imagem: "mensageiro/image_3.webp",
     },

@@ -122,11 +122,11 @@ const es = {
   Nossos_Clientes_Prefeitura_Serrita:"Es la certeza de que puede contar con los mejores del mercado. Va más allá de satisfacer las necesidades del cliente. Ella es una amiga y compañera! Todas las demandas solicitadas se cumplieron a tiempo. Excelente soporte técnico, siempre listo para responder. ¡Muchas gracias por la colaboración y el éxito siempre!",
   
   //PoloFácil
- controleTutoria: "Control de mentoría",
- importacaoDados : "Importación de datos en línea",
- controleFinazeiro: "Control financiero completo",
+  controleTutoria: "Control de mentoría",
+  importacaoDados : "Importación de datos en línea",
+  controleFinazeiro: "Control financiero completo",
 
- Contas_a_Parar:"Cuentas para detener",
+  Contas_a_Parar:"Cuentas para detener",
   Contas_a_Receber:"Cuentas a recibir",
   Controle_de_Pagamentos_do_alunos:"Control de pagos estudiantiles",
   Envio_de_mensagens:"Envío de mensajes (WhatsApp, correo electrónico, SMS)",
@@ -141,8 +141,60 @@ const es = {
   Faça:"Me gustan las grandes empresas y aparece ante un gran número de personas en cualquier lugar.",
   Envio:"Envío de: Imágenes, Videos, Archivos y Audios",
 
-  //ProductFeature
+   //PHPONTO
+   Desenvolvido:"Desarrollado para cumplir plenamente con la Ordenanza 1510 del Ministerio de Trabajo y Empleo, PHPONTO ofrece al gerente de Recursos Humanos una excelente herramienta de gestión de puntos.",
+   Por_causa_da_sua_interface:"Debido a su interfaz limpia y comprensible (pantallas), el operador aprende rápidamente todas las funciones del software, lo que reduce en gran medida el tiempo de asimilación y la necesidad de una nueva capacitación. Esto significa ahorrar tiempo y dinero.",
+  
+   //MENSAGEIRO
+ Para_vender_bastante:"Para vender mucho necesita ponerse en contacto con una gran cantidad de personas y empresas y el clima no siempre es favorable. Con eso en mente, desarrollamos un sistema para ayudar a profesionales independientes y empresas de cualquier tamaño en esta tarea.",
+ Enquanto_você:"Mientras realiza otras actividades, Messenger entrega su anuncio o mensaje a miles de personas. Puede enviar diferentes archivos adjuntos, como documentos de Word, hojas de cálculo, PDF, imágenes, fotos, contactos y todo lo que permita el canal elegido.", 
+ Faça_como_as_grandes_empresas:"Me gustan las grandes empresas y aparece ante un gran número de personas en cualquier lugar.",
+ Envio_de: "Envío de: Imágenes, Videos, Archivos y Audios",
 
+ //GECERT
+ Escolas:"Escuelas",
+ Polos_EAD:"Postes EAD",
+ Cursos:"Cursos",
+ Treinamentos:"Entrenamientos",
+ Funcionamento_bastante_simples:"Operación muy simple, solo seleccione una imagen correspondiente a la plantilla del certificado e importe un archivo con una lista de nombres",
+ Ideal:"Ideal para aquellos que necesitan imprimir múltiples certificados a la vez.",
+
+//Compacto
+
+Funciona_em_rede:"1. Funciona en una red.",
+Cadastro_de_Usuários:"2. Registro de usuarios y control de acceso.",
+Cadastro_de_Pessoas:"3. Registro de personas (clientes, empleados, proveedores)",
+Cadastro_de_Transportadoras:"4. Registro de portador",
+Cadastro_de_Vendedores:"5. Registro de vendedor",
+Cadastro_de_Centro_de_Custo:"6.Registro del centro de costos, método de pago y cuenta",
+
+Contas_à_Pagar: "7. Cuentas por pagar",
+Contas_à_Receber:"8. Cuentas por cobrar",
+Livro_Caixa:"9. caja de libro",
+
+Carnê:"13.folleto de pago",
+Cadastro_de_Produtos:"14. Registro del producto",
+Inventário_de_Estoque:"15. Inventario Inventario",
+Movimentação_Física_dos_Produtos:"16. Movimiento físico de productos",
+Orçamento:"17. Presupuesto",
+
+Pedido_de_Venda:"18. Pedido de ventas",
+Venda_de_Balcão:"19. Mostrador de ventas - POS - Frente de tienda",
+Compras:"20.Compras",
+Pesquisa_de_notas:"21. Busque notas emitidas contra CNPJ (Aceptar o no saber).",
+Baixa_automática_de_XML:"22. Descargue XML automáticamente, lea XML rápidamente (Manifieste, acepte e ignore)",
+Emissão_de_NFCe:"23. Emisión de NFC-e / NF-E 4.0 / CT-Os / MDF-e / CT-e / Factura del productor",
+Sped_Fiscal:"24. Sped Fiscal / Sped Contribuições / Sintegra",
+
+Backup:"25.Apoyo",
+Relatórios:"26.Informes;",
+Ordem_de_Serviço:"27.Orden de servicio",
+Etiqueta:"28.Pegatina Argox y Zebra",
+Busca:"29. Buscar datos de la empresa por CNPJ",
+Tela:"30. Pantalla de entrega",
+SAT:"31. SAT",
+
+  //ProductFeature
   productFeature_title: "Compra garantizada con Mercado Pago",
   productFeature_title_p1:"Reciba el producto que está esperando o le devolveremos su dinero",
 

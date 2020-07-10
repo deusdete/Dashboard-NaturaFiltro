@@ -12,13 +12,13 @@ export default function Phponto() {
   const features = [
     {
       textos: [
-        "Desenvolvido para atender na íntegra a Portaria 1510 do Ministério do Trabalho e Emprego, o PHPONTO oferece ao gestor de Recursos Humanos uma excelente ferramenta de gerenciamento do Ponto.",
+        "Desenvolvido",
       ],
       imagem: "phponto/image_1.webp",
     },
     {
       textos: [
-        "Por causa da sua interface (telas) limpa e compreensível, o operador aprende rapidamente todas as funções do software, reduzindo bastante o tempo de assimilação e a necessidade de novos treinamentos. Isto significa economia de tempo e dinheiro.",
+        "Por_causa_da_sua_interface",
         
       ],
       imagem: "phponto/image_2.webp",
