@@ -45,11 +45,16 @@ const pt = {
   entrarEmContato:"Entrar em contato",
   primeiroNome: "Primeiro Nome",
   ultimoNome: "Último nome",
-  seuEmail: "Seu emial",
+  seuEmail: "Seu email",
   seuTelefone: "Seu número de telefone",
   digiteSuaMensagem:"Digite aqui sua mensagem",
   enviarMensagem: "Enviar Mensagem",
   contateNos: "Contate-Nos",
+
+  //Contato - FaleF4cil
+  nomeCompleto: "Nome",
+  suaCidade: 'Cidade',
+  enviar: "Enviar",
 
   //Features
   polofacilWeb: "PoloFácil Web",

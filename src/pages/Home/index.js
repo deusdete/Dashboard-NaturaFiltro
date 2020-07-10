@@ -1,31 +1,22 @@
 import React from 'react'
+import { Helmet } from "react-helmet-async";
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import Slider from '../../components/Slider'
 import Solucoes from '../../components/Solucoes'
 import Clientes from '../../components/Clientes'
-import './home.css'
-import bg1 from '../../assets/revslider/5e86b-integracao-whatsapp-shap.png'
-import p1 from '../../assets/revslider/integracao-whatsapp-b36bd-03.png'
+
 import Breadcrumb from '../../components/Breadcrumb'
 import { useTranslation } from 'react-i18next';
+
 export default function Home(){
   const { t, i18n } = useTranslation();
   return (
     <>
       <Header/>
+				<Helmet>
+					<meta property="og:title" content="Home - F4CIL Soluções em Softwere"></meta>
+				</Helmet>
         <Breadcrumb title="home"/>
-        <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_6_1_forcefullwidth" >
-          <div id="rev_slider_6_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container revWampper" data-alias="security" >
-          <div id="rev_slider_6_1" class="rev_slider fullwidthabanner tp-overflow-hidden" style={{display: 'none'}} data-version="5.2.6">
-              <ul>
-                <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
-                <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
-                <Slider imgBg={bg1} imgProd={p1} titulo="Integração WhatsApp" discricao="Uma descrição" linkTo="/integracao" />
-              </ul>
-            </div>
-          </div>
-        </div>
         <section class="iq-about pt-5 ">
             <div class="container">
                <div class="row">
