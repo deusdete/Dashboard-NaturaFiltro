@@ -56,52 +56,10 @@ function FaleF4cil(props) {
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="contact-bg">
-                        <h2 class="">{t('Seu novo sistema de ponto.')}</h2>
+                        <h2 class="">{t('Obrigado por seu contato')}</h2>
+                        <h6 class="">{t('Preencha corretamente seus dados e nós entraremos em contato com você.')}</h6>
                         {/* <p class="sub-title">Progravida nibh vel velit auctor alinean sollicitudin, lorem quis bibendum auctor.</p> */}
-                        <div class="row no-gutters">
-                          <div class="col-sm-12">
-                            <ul class="iq-contact">
-                              <li>
-                                <i class="fas fa-plus"></i>
-                                <p>Sem fidelização</p>
-                              </li>
-                              <li>
-                                <i class="fas fa-plus"></i>
-                                <p>Sem taxa de adesão</p>
-                              </li>
-                              <li>
-                                <i class="fas fa-plus"></i>
-                                <p>Treinamento online grátis</p>
-                              </li>
-                              <li>
-                                <i class="fas  fa-plus"></i>
-                                <p>Integração para vários sistemas</p>
-                              </li>
-                              <li>
-                                <i class="fas fa-plus"></i>
-                                <p>Muito mais barato que o relógio de ponto</p>
-                              </li>
-                              <li>
-                                <i class="fas fa-plus"></i>
-                                <p>Autorizado pela portaria 373 do MTE</p>
-                              </li>
-                              <li>
-                                <i class="fas fa-plus"></i>
-                                <p>Preços flexíveis e justos</p>
-                              </li>
-                              <li>
-                                <i class="fas fa-plus"></i>
-                                <p>Suporte online</p>
-                              </li>
-                            </ul>
-                            {/* <ul class="info-share ">
-                              <li><a href="https://www.facebook.com/vsetecnologia"><i class="fab fa-facebook-square"></i></a></li>
-                              <li><a href="https://twitter.com/vsetecnologia"><i class="fab fa-twitter-square"></i></a></li>
-                              <li><a href="https://www.instagram.com/vsetecnologia/"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href="https://pt.linkedin.com/company/vse-tecnologia"><i class="fab fa-linkedin"></i></a></li>
-                            </ul> */}
-                          </div>
-                        </div>
+                      
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -145,7 +103,7 @@ function FaleF4cil(props) {
         <Modal.Body>Parabéns, seu email foi enviado com sucesso!</Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
-            {t('estaBem')}
+            {t('Ok')}
           </Button>
         </Modal.Footer>
       </Modal>
