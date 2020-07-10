@@ -20,41 +20,41 @@ export default function PoloFacil() {
     },
     {
       textos: [
-        "Contas a Parar",
-        "Contas a Receber",
-        "Controle de Pagamentos do alunos",
+        "Contas_a_Parar",
+        "Contas_a_Receber",
+        "Controle_de_Pagamentos_do_alunos",
         
       ],
       imagem: "polofacil/image_2.webp",
     },
     {
       textos: [
-        "Envio de mensagens (WhatsApp, Email, SMS)",
-        "Controle de Leads / Candidatos",
+        "Envio_de_mensagens",
+        "Controle_de_Leads",
         "Funil de vendas",
       ],
       imagem: "polofacil/image_3.webp",
     },
     {
       textos: [
-        "Acompanhamento de taxa de evasão",
-        "Controle de Rematricula",
-        "Cadastro de colaboradores com controle de férias, pagamentos de salários etc",
-        "Controle e acompanhamento de assiduidade ao AVA",
-        "Diversos relatórios administrativos"
+        "Acompanhamento_de_taxa_de_evasão",
+        "Controle_de_Rematricula",
+        "Cadastro_de_colaboradores",
+        "Controle_e_acompanhamento",
+        "Diversos_relatórios"
       ],
       imagem: "polofacil/image_4.webp",
     },
     {
       textos: [
-        "Importando os contatos do seu Smartphone você elimina a tarefa chata de ficar selecionando os destinatários e enviando aos poucos.",
+        "Importando_os_contatos",
       ],
       imagem: "polofacil/image_5.webp",
     },
     {
       textos: [
-        "Faça como as grandes empresas e apareça para um grande número de pessoas em qualquer lugar.",
-        "Envio de: Imagens, Videos, Aquivos e Áudios",
+        "Faça",
+        "Envio",
       ],
       imagem: "polofacil/image_6.webp",
     },

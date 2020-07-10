@@ -128,6 +128,20 @@ const pt = {
   importacaoDados : "Importação de Dados on-line",
   controleFinazeiro: "Controle Finazeiro Completo",
 
+  Contas_a_Parar:"Contas a Parar",
+  Contas_a_Receber:"Contas a Receber",
+  Controle_de_Pagamentos_do_alunos:"Controle de Pagamentos do alunos",
+  Envio_de_mensagens:"Envio de mensagens (WhatsApp, Email, SMS)",
+  Controle_de_Leads:"Controle de Leads / Candidatos",
+  Funil_de_vendas:"Funil de vendas",
+  Acompanhamento_de_taxa_de_evasão:"Acompanhamento de taxa de evasão",
+  Controle_de_Rematricula:"Controle de Rematricula",
+  Cadastro_de_colaboradores:"Cadastro de colaboradores com controle de férias, pagamentos de salários etc",
+  Controle_e_acompanhamento:"Controle e acompanhamento de assiduidade ao AVA",
+  Diversos_relatórios:"Diversos relatórios administrativos",
+  Importando_os_contatos:"Importando os contatos do seu Smartphone você elimina a tarefa chata de ficar selecionando os destinatários e enviando aos poucos.",
+  Faça:"Faça como as grandes empresas e apareça para um grande número de pessoas em qualquer lugar.",
+  Envio:"Envio de: Imagens, Videos, Aquivos e Áudios",
   //ProductFeature
 
   productFeature_title: "Compra Garantida com o Mercado Pago",

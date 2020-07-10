@@ -127,6 +127,21 @@ const en = {
   importacaoDados : "Online Data Import",
   controleFinazeiro: "Complete Financial Control",
 
+  Contas_a_Parar:"Accounts to Stop",
+  Contas_a_Receber:"Bills to receive",
+  Controle_de_Pagamentos_do_alunos:"Student Payments Control",
+  Envio_de_mensagens:"Sending messages (WhatsApp, Email, SMS)",
+  Controle_de_Leads:"Lead / Candidate Control",
+  Funil_de_vendas:"Sales funnel",
+  Acompanhamento_de_taxa_de_evasão:"Monitoring of evasion rate",
+  Controle_de_Rematricula:"Rematricula Control",
+  Cadastro_de_colaboradores:"Registration of employees with vacation control, salary payments etc.",
+  Controle_e_acompanhamento:"Control and monitoring of attendance to AVA",
+  Diversos_relatórios:"Various administrative reports",
+  Importando_os_contatos:"By importing contacts from your Smartphone, you eliminate the annoying task of selecting the recipients and sending them little by little.",
+  Faça:"Do like big companies and appear to a large number of people anywhere.",
+  Envio:"Sending of: Images, Videos, Files and Audios",
+
    //ProductFeature
 
    productFeature_title: "Guaranteed Purchase with Mercado Pago",
