@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import logo from '../../assets/images/Ativo-2@4x.png'
 
+import '../../css/bootstrap.min.css'
+
 
 export default function Header(){
   
@@ -25,18 +27,18 @@ export default function Header(){
 }
 
   return(
-    <header id="header">
+    <header id="header" style={{backgroundColor:  "#3d1a64"}}>
       <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-lg-9">
-                <nav className="navbar navbar-expand-lg navbar-light">
+                <nav className="navbar navbar-expand-lg navbar-light" style={{left: 0}}>
                   <a className="navbar-brand" href="/">
                   <img className="logo" src={logo}  alt="logo-f4cil" ></img>
                   </a>
-                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" style={{backgroundColor: "#3d1a64"}} aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown" style={{backgroundColor: "#3d1a64"}}>
                         <ul class="navbar-nav ml-auto">
                            <li class="nav-item">
                               <Link class="nav-link active" to="/">{t('home')}</Link>

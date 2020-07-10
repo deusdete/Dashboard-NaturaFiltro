@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next';
-export default function LogiCpm() {
+import { Spinner } from 'react-bootstrap'
+import { connect } from 'react-redux';
+import { loginUser } from '../../redux/actions/userAction';
+
+function LogiCpm(props){
   const { t, i18n } = useTranslation();
+  const [ email, setEmail ] = useState('');
+  const [ senha, setSenha ] = useState('');
+
+  async function handleLogin(e){
+    e.preventDefault()
+    const userData = {
+      email,
+      senha
+    }
+    console.log(userData)
+    const res = await props.loginUser(userData, props.history);
+    if(res){
+      console.log('dsfsdf')
+    }
+  }
   return (
     <section class="iq-login-regi">
       <div class="container">
@@ -21,12 +40,12 @@ export default function LogiCpm() {
               <div class="iq-login iq-rmt-20">
                 <form>
                   <div class="form-group">
-                    <input type="email" class="form-control email-bg" id="exampleInputEmail1" placeholder="Email"></input>
+                    <input type="email" onChange={e => setEmail(e.target.value)} class="form-control email-bg" id="exampleInputEmail1" placeholder="Email"></input>
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control email-bg" id="exampleInputPassword1" placeholder="Senha"></input>
+                    <input type="password" onChange={e => setSenha(e.target.value)} class="form-control email-bg" id="exampleInputPassword1" placeholder="Senha"></input>
                   </div>
-                  <button type="submit" class="button">{t('login')}</button>
+        <button onClick={handleLogin} class="button">{props.loading && <Spinner animation="border" variant="light" size="sm" />}{t('login')}</button>
                 </form>
                 <div class="row">
                   <div class="col-sm-6">
@@ -46,3 +65,10 @@ export default function LogiCpm() {
     </section>
   )
 }
+const mapStateToProps =(state) => ({
+  loading: state.UI.loading,
+})
+const mapActionsToProps = {
+  loginUser
+}
+export default connect(mapStateToProps, mapActionsToProps)(LogiCpm)

@@ -20,7 +20,7 @@ export default function PoloFacil() {
     },
     {
       textos: [
-        "Contas a Parar",
+        "contasPagar",
         "Contas a Receber",
         "Controle de Pagamentos do alunos",
         
