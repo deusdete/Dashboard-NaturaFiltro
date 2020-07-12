@@ -23,7 +23,7 @@ export default function SolucoesCompo() {
                   <h5 >{t('polofacil')}</h5>
                   <p>{t('polofacil_p1')}</p>
                   {/* <p class="mb-0">Ganhe tempo e matrículas gerenciando de forma rápida, simples e segura, o seu Polo EAD utilizando as ferramentas do PoloFácil. </p> */}
-                  <a class="btn btn-primary mt-2" href="#">{t('saibaMais')}</a>
+                  <a class="btn btn-primary mt-2" href="/polofacil">{t('saibaMais')}</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -45,7 +45,7 @@ export default function SolucoesCompo() {
                   <h5 >{t('compact')}</h5>
                   <p>{t('compact_p1')}</p>
                   {/* <p class="mb-0">Eficiência, facilidade de uso e pouco investimento são as principais vantagens do PHPONTO quando o assunto é controle de frequência. </p> */}
-                  <a class="btn btn-primary mt-2" href="/compact">{t('saibaMais')}</a>
+                  <a class="btn btn-primary mt-2" href="/compacto">{t('saibaMais')}</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
