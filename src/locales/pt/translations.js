@@ -55,6 +55,11 @@ const pt = {
   nomeCompleto: "Nome",
   suaCidade: 'Cidade',
   enviar: "Enviar",
+  obrigadoContato:"Obrigado por seu contato",
+  preencha:"Preencha corretamente e envie os dados para que entremos em contato com você",
+  emailEnviado:"Email enviado",
+  parabensEmailEnviado:"Parabéns, seu email foi enviado com sucesso!",
+  ou: "Ou",
 
   //Features
   polofacilWeb: "PoloFácil Web",

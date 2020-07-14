@@ -78,8 +78,8 @@ function FaleF4cil(props) {
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="contact-bg">
-                        <h2 class="">{t('Obrigado por seu contato')}</h2>
-                        <h6 class="">{t('Preencha corretamente seus dados e nós entraremos em contato com você.')}</h6>
+                        <h2 class="">{t('obrigadoContato')}</h2>
+                        <h6 class="">{t('preencha')}</h6>
                         {/* <p class="sub-title">Progravida nibh vel velit auctor alinean sollicitudin, lorem quis bibendum auctor.</p> */}
                       
                       </div>
@@ -105,7 +105,7 @@ function FaleF4cil(props) {
                                 </div>
                                 <div class="d-flex col-lg-12 col-sm-12 mb-3 text-center align-items-center justify-content-between" >  
                                 <button  id="submit" name="submit" onClick={handleContato} value="Send" class="button wow fadeInUp contact-us-button" data-wow-duration="1.0s">{t('enviar')}</button>
-                                <h6 >Ou</h6>
+                                <h6 >{t('ou')}</h6>
                                 <a href={`https://wa.me/5521966026707?text=Ol%C3%A1%2C+meu+nome+%C3%A9+${nome}%2C+minha+cidade+%C3%A9+${cidade}+e+tenho+interesse+nas+solu%C3%A7%C3%B5es+da+f4cil.+%0D%0AMeus+contato%3A+${email}+e+telefone+${telefone}`} target="_blank"><i style={{fontSize: 75, color: "#0a9033"}} class="fa fa-whatsapp"></i></a>
                                 </div>
                               </div>
@@ -120,9 +120,9 @@ function FaleF4cil(props) {
         </div>
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Email enviando</Modal.Title>
+            <Modal.Title>{t('emailEnviado')}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Parabéns, seu email foi enviado com sucesso!</Modal.Body>
+        <Modal.Body>{t('parabensEmailEnviado')}</Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
             {t('Ok')}

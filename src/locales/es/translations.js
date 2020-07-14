@@ -50,6 +50,16 @@ const es = {
  enviarMensagem: "Enviar mensaje",
  contateNos: "Contáctenos",
 
+ //Contato falef4cil
+  nomeCompleto: "Nombre",
+  suaCidade: 'Ciudad',
+  enviar: "Enviar",
+  obrigadoContato:"Gracias por su contacto.",
+  preencha:"Complete correctamente y envíe los datos para que podamos contactarlo.",
+  emailEnviado:"Email enviado",
+  parabensEmailEnviado:"¡Felicitaciones, su correo electrónico ha sido enviado con éxito!",
+  ou: "O",
+
  //Features
  polofacilWeb: "PoloFácil Web",
  polofacilWeb_f_p1: "Ahorre tiempo e inscripciones gestionando su Polo EAD de forma rápida, sencilla y segura con las herramientas PoloFácil.",

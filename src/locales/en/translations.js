@@ -50,6 +50,15 @@ const en = {
   enviarMensagem: "Send Message",
   contateNos: "Contact Us",
 
+  nomeCompleto: "Name",
+  suaCidade: 'City',
+  enviar: "Send",
+  obrigadoContato:"Thank you for contacting us.",
+  preencha:"Please fill out the fields correctly and send the form.",
+  emailEnviado:"Email sent",
+  parabensEmailEnviado:"Congratulations, your email has been sent successfully!",
+  ou: "Or",
+
   //Features
   polofacilWeb: "PoloFácil Web",
   polofacilWeb_f_p1: "Save time and enrollments by managing your Polo EAD quickly, simply and safely using the PoloFácil tools.",

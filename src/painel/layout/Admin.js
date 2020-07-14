@@ -18,34 +18,28 @@ import { SET_AUTHENTICATED } from '../../redux/types';
 
 function AdminLayout(props){
   const [ isFullPageLayout, setIsFullPageLayout ] = useState(false);
-  const token = localStorage.FBIdToken;
+  const _idRevenda = localStorage.F4IdRevenda
   let navbarComponent = !isFullPageLayout ? <Navbar/> : '';
   let sidebarComponent = !isFullPageLayout ? <Sidebar/> : '';
   let footerComponent = !isFullPageLayout ? <Footer/> : '';
 
-  // useEffect(() => {
-  //   onRouteChanged();
-  //   if(token){
-  //     const tokenDecote = jwtDecode(token);
-  //     console.log(tokenDecote);
-  //     if(tokenDecote.exp * 1000 < Date.now()){
-  //       store.dispatch(logoutUser());
-  //       window.location.href= "/user-pages/login-1";
-  //     }else{
-  //       store.dispatch({type: SET_AUTHENTICATED});
-  //       api.defaults.headers.Authorization = token;
-  //       console.log('getUserData...')
-  //       store.dispatch(getUserData())
-  //     }
-  //   }else{
-  //     console.log('Não tem Token')
-  //   }
-  // // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [])
-
   useEffect(() => {
     onRouteChanged();
-  })
+    if(_idRevenda){
+        console.log(_idRevenda)
+        store.dispatch({type: SET_AUTHENTICATED});
+        api.defaults.headers.Authorization = _idRevenda;
+        console.log('getUserData...')
+        store.dispatch(getUserData())
+    }else{
+      window.location.href= "/login";
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // useEffect(() => {
+  //   onRouteChanged();
+  // })
 
   // if (this.props.location !== prevProps.location) {
   //   this.onRouteChanged();

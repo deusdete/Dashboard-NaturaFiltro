@@ -6,7 +6,7 @@ export const loginUser =  (userData, history)  => (dispatch) => {
   api.post('/login', userData)
   .then(res => {
     console.log(res.data)
-    setAuthorizatonHeader(res.data)
+    setAuthorizatonHeader(res.data.idRevenda)
     dispatch({
       type: SET_USER,
       payload: res.data
@@ -45,8 +45,7 @@ export const signupUser =  (newUserData, history)  => (dispatch) => {
   dispatch({type: LOADING_UI});
   api.post('/inscreva-se', newUserData)
   .then(res => {
-    setAuthorizatonHeader(res.data.token)
-    dispatch(getUserData());
+    setAuthorizatonHeader(res.data.idRevenda)
     dispatch({type: CLEAR_ERRORS});
     history.push('/')
   })
@@ -72,9 +71,11 @@ export const signupUser =  (newUserData, history)  => (dispatch) => {
 }
 
 export const getUserData = () => (dispatch) => {
-  dispatch({type: LOADING_USER});
-  api.get('/usuario/perfil')
+
+  console.log('login...')
+  api.post('/login')
     .then(res => {
+      console.log('res', res)
       dispatch({
         type: SET_USER,
         payload: res.data
@@ -86,9 +87,10 @@ export const getUserData = () => (dispatch) => {
 }
 
 const setAuthorizatonHeader = (token) => {
-  const FBIdToken = `Bearer ${token}`
-    localStorage.setItem('FBIdToken', FBIdToken);
-    api.defaults.headers.Authorization  = FBIdToken;
+  const F4IdRevenda = `Bearer ${token}`
+    localStorage.setItem('F4IdRevenda', F4IdRevenda);
+    console.log(F4IdRevenda)
+    api.defaults.headers.Authorization  = F4IdRevenda;
 }
 
 export const sendEmail =  (userData, route)  => (dispatch) => {

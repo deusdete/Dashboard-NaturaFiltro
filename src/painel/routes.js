@@ -30,6 +30,7 @@ const BlankPage = lazy(() => import('./pages/user-pages/BlankPage'));
 
 const MinhasEmpresas = lazy(() => import('./pages/empresa/MinhasEmpresas'));
 const AdicionaEmpresa = lazy(() => import('./pages/empresa/AdicionaEmpresa'));
+const Clientes = lazy(() => import('./pages/clientes'));
 const Perfil = lazy(() => import('./pages/usuario/Perfil'));
 
 
@@ -60,7 +61,7 @@ export default function AppRoutes(){
 
           <Route exact path="/user-pages/blank-page" component={ BlankPage } />
 
-          <Route exact path="/cliente/todas" component={ BlankPage } />
+          <Route exact path="/cliente/todas" component={ Clientes } />
           <Route exact path="/cliente/adiciona" component={ BlankPage } />
 
           <Route exact path="/usuario/usuarios" component={ BlankPage } />
