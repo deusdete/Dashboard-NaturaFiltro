@@ -8,6 +8,7 @@ export default function Clientes() {
   const [loadingAplicativos, setLoadingAplicativos] = useState(false);
   const [aplicativosErros, setAplicativosErros] = useState(null);
   const [ idRevenda, setIdRevenda ] = useState('');
+  const [ idPessoa, setIdPessoa ] = useState('')
   const [ apliacativos, setAplicativos ] = useState([])
   
   
@@ -36,19 +37,28 @@ export default function Clientes() {
   }, [idRevenda])
 
   async function getAplicativos(idPessoa){
+    setIdPessoa(idPessoa)
     let _newData = []
     console.log(idRevenda)
     setLoadingAplicativos(true)
     await api.post(`/clientes/${idPessoa}`, {},{headers: {Authorization: idRevenda}}).then(res => {
-      console.log(res.data)
       const { data } = res;
       Object.keys(data).map((key ) => {
-        console.log(key);
         _newData.push(data[key])
       })
       console.log(_newData);
       setAplicativos(_newData)
       setLoadingAplicativos(false)
+    }).catch(err => {
+      setAplicativosErros({geral: "Cliente não tem aplicavitos no momento"})
+      console.error(err.response.data)
+    })
+  }
+
+  async function alterarLicenca(idLicenca){
+    await api.put(`/licencas`, {idLicenca},{headers: {Authorization: idRevenda}}).then(res => {
+      console.log(res.data)
+      getAplicativos(idPessoa)
     }).catch(err => {
       setAplicativosErros({geral: "Cliente não tem aplicavitos no momento"})
       console.error(err.response.data)
@@ -113,10 +123,10 @@ export default function Clientes() {
                   <thead>
                     <tr>
                       <th> Aplicativo </th>
-                      <th> Ativo </th>
                       <th> Data de Cadastro </th>
                       <th> Data de Validade </th>
                       <th> Dispositivo </th>
+                      <th> Status </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -125,12 +135,16 @@ export default function Clientes() {
                       <td className="py-1">
                         {item.NomeAplicativo}
                       </td>
-                      {item.ativo === true ? (<td>  Sim </td>) : (<td>  Não </td>) }
                       <td>  {item.dataCadastro} </td>
                       <td>  {item.dataValidade} </td>
                       <td>  {item.Dispositivo} </td>
+                      {item.ativo === true ? 
+                        (<button onClick={() => alterarLicenca(item.idLicenca)} type="button" className="btn btn-dark btn-icon-text">
+                          <i className="mdi btn-icon-prepend"></i> Desativar </button>) : 
+                        (<button onClick={() => alterarLicenca(item.idLicenca)} type="button" className="btn btn-success btn-icon-text">
+                        <i className="mdi mdi-checkbox-marked btn-icon-prepend"></i> Ativar </button>) }
                       {/* <td>
-                        <Dropdown>
+                        <Dropdown> 
                           <Dropdown.Toggle variant="btn btn-primary" id="dropdownMenuButton1">
                             Ação
                           </Dropdown.Toggle>
