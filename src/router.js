@@ -13,6 +13,7 @@ import FaleF4cil from './pages/Contato/FaleF4cil'
 import Sobre from './pages/Sobre'
 
 import Login from './pages/Login'
+import Registro from './pages/Registro'
 
 import AdminLayout from './painel/layout/Admin'
 
@@ -32,6 +33,7 @@ export default function Router(){
         <Route path="/gecert" exact component={Gecert} />
         <Route path="/mensageiro" exact component={Mensageiro} />
         <Route path="/login" exact component={Login} />
+        <Route path="/registro" exact component={Registro} />
         <Route path="/dashboard" component={AdminLayout} />
         <Route path="/basic-ui/buttons" component={ AdminLayout } />
         <Route path="/basic-ui/dropdowns" component={ AdminLayout } />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Breadcrumb from '../../components/Breadcrumb'
@@ -63,7 +64,7 @@ function Login(props) {
                         <div class="col-md-6 col-sm-12">
                           <div class="text-right">
                             <div >Não tem uma conta?</div>
-                            <div > <a href="#">Registre-se agora</a></div>
+                            <div > <Link to="/registro">Registre-se agora</Link></div>
                           </div>
                         </div>
                       </div>

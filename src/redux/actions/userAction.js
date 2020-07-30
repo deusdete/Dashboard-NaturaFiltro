@@ -43,9 +43,10 @@ export const logoutUser = () => (dispatch) => {
 
 export const signupUser =  (newUserData, history)  => (dispatch) => {
   dispatch({type: LOADING_UI});
-  api.post('/inscreva-se', newUserData)
+  api.post('/registro', newUserData)
   .then(res => {
-    setAuthorizatonHeader(res.data.idRevenda)
+    // setAuthorizatonHeader(res.data.idRevenda)
+    console.log(res.data)
     dispatch({type: CLEAR_ERRORS});
     history.push('/')
   })
