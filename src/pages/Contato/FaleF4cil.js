@@ -39,7 +39,7 @@ function FaleF4cil(props) {
       telefone,
       cidade
     }
-    const sucess = await props.sendEmail(data, 'contato');
+    const sucess = await props.sendEmail(data, 'contato-novo');
     if(sucess){
       console.log('Sucesso')
     }else{

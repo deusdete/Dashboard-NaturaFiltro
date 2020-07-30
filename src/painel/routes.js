@@ -65,7 +65,7 @@ export default function AppRoutes(){
           <Route exact path="/cliente/adiciona" component={ BlankPage } />
 
           <Route exact path="/usuario/usuarios" component={ BlankPage } />
-          <Route exact path="/usuario/adiciona" component={ BlankPage } />
+          <Route exact path="/usuario/adiciona" component={ AdicionaEmpresa } />
           <Route exact path="/usuario/meu-perfil" component={ BlankPage } />
         </Switch>
       </Suspense>
