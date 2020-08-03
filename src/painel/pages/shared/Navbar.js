@@ -137,7 +137,7 @@ function Navbar(props) {
                   {props.imagemUrl && <img className="img-xs rounded-circle" src={props.imagemUrl} alt="Profile" />}
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="preview-list navbar-dropdown pb-3">
-                  <Dropdown.Item className="dropdown-item p-0 preview-item d-flex align-items-center border-bottom" href="!#" onClick={evt =>evt.preventDefault()}>
+                 <Dropdown.Item className="dropdown-item p-0 preview-item d-flex align-items-center border-bottom" href="!#" onClick={evt =>evt.preventDefault()}>
                     <div className="d-flex">
                       <div className="py-3 px-4 d-flex align-items-center justify-content-center">
                         <i className="mdi mdi-bookmark-plus-outline mr-0"></i>
@@ -150,6 +150,7 @@ function Navbar(props) {
                       </div>
                     </div>
                   </Dropdown.Item>
+                   {/* 
                   <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center border-0 mt-2" onClick={evt =>evt.preventDefault()}>
                     Manage Accounts
                   </Dropdown.Item>
@@ -158,7 +159,7 @@ function Navbar(props) {
                   </Dropdown.Item>
                   <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center border-0" onClick={evt =>evt.preventDefault()}>
                     Check Inbox
-                  </Dropdown.Item>
+                  </Dropdown.Item> */}
                   <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center border-0" onClick={evt => sair()}>
                     Sair
                   </Dropdown.Item>
