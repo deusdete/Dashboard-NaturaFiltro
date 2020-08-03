@@ -3,9 +3,6 @@ import { SET_USER, SET_AUTHENTICATED, LOADING_USER, SET_UNAUTHENTICATEED } from 
 const initialState = {
   authenticated: false,
   loadind: false,
-  credentials: {},
-  likes: [],
-  notifications: []
 }
 
 export default function(state = initialState, action){

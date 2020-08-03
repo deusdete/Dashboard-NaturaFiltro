@@ -7,6 +7,7 @@ export const loginUser =  (userData, history)  => (dispatch) => {
   .then(res => {
     console.log(res.data)
     setAuthorizatonHeader(res.data.idRevenda)
+    setUserInfo(res.data)
     dispatch({
       type: SET_USER,
       payload: res.data
@@ -36,8 +37,8 @@ export const loginUser =  (userData, history)  => (dispatch) => {
 }
 
 export const logoutUser = () => (dispatch) => {
-  localStorage.removeItem('FBIdToken');
-  delete api.defaults.headers.Authorization;
+  localStorage.removeItem('F4IdRevenda');
+  localStorage.removeItem('F4User');
   dispatch({type: SET_UNAUTHENTICATEED})
 }
 
@@ -74,24 +75,35 @@ export const signupUser =  (newUserData, history)  => (dispatch) => {
 export const getUserData = () => (dispatch) => {
 
   console.log('login...')
-  api.post('/login')
-    .then(res => {
-      console.log('res', res)
-      dispatch({
-        type: SET_USER,
-        payload: res.data
-      })
+  dispatch({type: LOADING_USER});
+  const _user = localStorage.F4User
+  if(_user){
+    const userData = JSON.parse(_user)
+    console.log('userData', userData)
+    dispatch({
+      type: SET_USER,
+      payload: userData
     })
-    .catch(err => {
-      console.error(err);
+  }else{
+    dispatch({
+      type: SET_ERRORS,
+      payload: { geral: "Sem usuário" }
     })
+  }
 }
+  
 
 const setAuthorizatonHeader = (token) => {
   const F4IdRevenda = `Bearer ${token}`
     localStorage.setItem('F4IdRevenda', F4IdRevenda);
     console.log(F4IdRevenda)
     api.defaults.headers.Authorization  = F4IdRevenda;
+}
+
+const setUserInfo = (user) => {
+  const F4User = JSON.stringify(user)
+    localStorage.setItem('F4User', F4User);
+    console.log(F4User)
 }
 
 export const sendEmail =  (userData, route)  => (dispatch) => {

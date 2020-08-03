@@ -57,10 +57,6 @@ export default function Router(){
         <Route path="/user-pages/blank-page" component={ AdminLayout } />
 
         <Route path="/cliente/todas" component={ AdminLayout } />
-        <Route path="/cliente/adiciona" component={ AdminLayout } />
-
-        <Route path="/usuario/usuarios" component={ AdminLayout } />
-        <Route path="/usuario/adiciona" component={ AdminLayout } />
         <Route path="/usuario/meu-perfil" component={ AdminLayout } />
       </Switch>
     </BrowserRouter>

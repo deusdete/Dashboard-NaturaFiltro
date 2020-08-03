@@ -4,6 +4,7 @@ import TableLoader from '../../components/Placeholderloadings/TableLoader'
 import api from '../../../services/api'
 export default function Clientes() {
   const [clientes, setClientes] = useState([]);
+  const [ selected, setSelected ] = useState('')
   const [loadingClientes, setLoadingClientes] = useState(true);
   const [loadingAplicativos, setLoadingAplicativos] = useState(false);
   const [aplicativosErros, setAplicativosErros] = useState(null);
@@ -84,8 +85,8 @@ export default function Clientes() {
                     </tr>
                   </thead>
                   <tbody>
-                    {clientes.map(cliente => (
-                    <tr onClick={() => getAplicativos(cliente.idCliente)}>
+                    {clientes.map((cliente, key) => (
+                    <tr key={key} style={{backgroundColor: cliente.idCliente ===  idPessoa ? "rgb(188 230 255)" : ''}} onClick={() => getAplicativos(cliente.idCliente)}>
                       <td className="py-1">
                         {cliente.razao}
                       </td>

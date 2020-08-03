@@ -22,6 +22,14 @@ class Sidebar extends Component {
     }
   }
 
+  getNome(string){
+    if(string){
+      let name = string.split(" ")
+      return `${name[0]} ${name[1]}`
+    }
+   return 'Usuário'
+  }
+
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
       this.onRouteChanged();
@@ -68,10 +76,10 @@ class Sidebar extends Component {
                 <Dropdown.Toggle className="nav-link user-switch-dropdown-toggler p-0 toggle-arrow-hide bg-transparent border-0 w-100">
                   <div className="d-flex justify-content-between align-items-start">
                     <div className="profile-image">
-                      <img src={imagemUrl} alt="profile" />
+                     {imagemUrl &&  <img src={imagemUrl} alt="profile" />}
                     </div>
                     <div className="text-left ml-3">
-                      <p className="profile-name">{nome}</p>
+                      <p className="profile-name">{this.getNome(nome)}</p>
                       <small className="designation text-muted text-small">Administrador</small>
                       <span className="status-indicator online"></span>
                     </div>
@@ -177,37 +185,9 @@ class Sidebar extends Component {
             <Collapse in={ this.state.clienteUiMenuOpen }>
               <ul className="nav flex-column sub-menu">
                 <li className="nav-item"> <Link className={ this.isPathActive('/cliente/todas') ? 'nav-link active' : 'nav-link' } to="/cliente/todas"><i className="mdi mdi-account-group menu-icon"></i>Todos</Link></li>
-                <li className="nav-item"> <Link className={ this.isPathActive('/cliente/adiciona') ? 'nav-link active' : 'nav-link' } to="/cliente/adiciona"><i className="mdi mdi-plus-circle menu-icon"></i>Adicionar Clinte</Link></li>
               </ul>
             </Collapse>
           </li>
-          {tipoConta !== 'superAdmin' ? 
-          <li className={ this.isPathActive('/usuario') ? 'nav-item active' : 'nav-item' }>
-            <div className={ this.state.usuarioUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('usuarioUiMenuOpen') } data-toggle="collapse">
-              <i className="mdi mdi-account-multiple menu-icon"></i>
-              <span className="menu-title">Gerenciar Usuário</span>
-              <i className="menu-arrow"></i>
-            </div>
-            <Collapse in={ this.state.usuarioUiMenuOpen }>
-              <ul className="nav flex-column sub-menu">
-                <li className="nav-item"> <Link className={ this.isPathActive('/usuario/usuarios') ? 'nav-link active' : 'nav-link' } to="/usuario/usuarios"><i className="mdi mdi-account-group menu-icon"></i>Usuários</Link></li>
-                <li className="nav-item"> <Link className={ this.isPathActive('/usuario/adiciona') ? 'nav-link active' : 'nav-link' } to="/usuario/adiciona"><i className="mdi mdi-account-plus menu-icon"></i>Adicionar Usuário</Link></li>
-                <li className="nav-item"> <Link className={ this.isPathActive('/usuario/meu-perfil') ? 'nav-link active' : 'nav-link' } to="/usuario/meu-perfil"><i className="mdi mdi-account-circle menu-icon"></i>Meu Perfil</Link></li>
-              </ul>
-            </Collapse>
-          </li> : 
-          <li className={ this.isPathActive('/usuario') ? 'nav-item active' : 'nav-item' }>
-          <div className={ this.state.usuarioUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('usuarioUiMenuOpen') } data-toggle="collapse">
-            <i className="mdi mdi-account-multiple menu-icon"></i>
-            <span className="menu-title">Conta</span>
-            <i className="menu-arrow"></i>
-          </div>
-            <Collapse in={ this.state.usuarioUiMenuOpen }>
-              <ul className="nav flex-column sub-menu">
-                <li className="nav-item"> <Link className={ this.isPathActive('/usuario/meu-perfil') ? 'nav-link active' : 'nav-link' } to="/usuario/meu-perfil"><i className="mdi mdi-account-circle menu-icon"></i>Meu Perfil</Link></li>
-              </ul>
-            </Collapse>
-          </li> }
         </ul> }
       </nav>
     );
