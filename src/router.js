@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import Home from './pages/Home'
 import Solucoes from './pages/Solucoes'
+import IdData from './pages/Solucoes/IdData'
 import PoloFacil from './pages/Solucoes/PoloFacil'
 import Phponto from './pages/Solucoes/Phponto'
 import Compacto from './pages/Solucoes/Compacto'
@@ -27,6 +28,7 @@ export default function Router(){
         <Route path="/contato" exact component={Contato} />
         <Route path="/falef4cil" exact component={FaleF4cil} />
         <Route path="/sobre-nos" exact component={Sobre} />
+        <Route path="/iddata" exact component={IdData} />
         <Route path="/polofacil" exact component={PoloFacil} />
         <Route path="/phponto" exact component={Phponto} />
         <Route path="/compacto" exact component={Compacto} />
