@@ -1,23 +1,23 @@
 import React, { useEffect, useState  } from 'react';
 import { withRouter } from 'react-router-dom';
-import '../App.scss';
-import Routes from '../routes';
-import Navbar from '../pages/shared/Navbar';
-import Sidebar from '../pages/shared/Sidebar';
-import Footer from '../pages/shared/Footer';
+import './App.scss';
+import Routes from './routes';
+import Navbar from './pages/shared/Navbar';
+import Sidebar from './pages/shared/Sidebar';
+import Footer from './pages/shared/Footer';
 
 import jwtDecode from 'jwt-decode'
-import api from '../../services/api';
+import api from '../services/api';
 
 // Redux
 import { Provider } from 'react-redux';
-import store from '../../redux/store';
-import { logoutUser, getUserData} from '../../redux/actions/userAction';
-import { SET_AUTHENTICATED } from '../../redux/types';
+import store from '../redux/store';
+import { logoutUser, getUserData} from '../redux/actions/userAction';
+import { SET_AUTHENTICATED } from '../redux/types';
 
 
 
-function AdminLayout(props){
+function App(props){
   const [ isFullPageLayout, setIsFullPageLayout ] = useState(false);
   const currentUserToken = localStorage._currentUserToken
   let navbarComponent = !isFullPageLayout ? <Navbar/> : '';
@@ -33,11 +33,16 @@ function AdminLayout(props){
         store.dispatch(logoutUser());
         window.location.href = "/login";
       } else {
-        console.log("Token não inspirou, SET_AUTHENTICATED");
-        store.dispatch({ type: SET_AUTHENTICATED });
-        api.defaults.headers.Authorization = currentUserToken;
-        console.log("getUserData...");
-        store.dispatch(getUserData());
+        if(window.location.pathname === "/login"){
+          window.location.href = "/";
+        }else{
+          console.log("Token não inspirou, SET_AUTHENTICATED");
+          store.dispatch({ type: SET_AUTHENTICATED });
+          api.defaults.headers.Authorization = currentUserToken;
+          console.log("getUserData...");
+          store.dispatch(getUserData());
+        }
+        
       }
     } else {
       console.log(store.getState());
@@ -61,7 +66,7 @@ function AdminLayout(props){
   function onRouteChanged() {
     console.log("ROUTE CHANGED");
     window.scrollTo(0, 0);
-    const fullPageLayoutRoutes = ['/user-pages/login-1', '/user-pages/login-2', '/user-pages/register-1', '/user-pages/register-2', '/user-pages/lockscreen', '/error-pages/error-404', '/error-pages/error-500', '/general-pages/landing-page'];
+    const fullPageLayoutRoutes = ['/login', '/user-pages/login-1', '/user-pages/login-2', '/user-pages/register-1', '/user-pages/register-2', '/user-pages/lockscreen', '/error-pages/error-404', '/error-pages/error-500', '/general-pages/landing-page'];
     for ( let i = 0; i < fullPageLayoutRoutes.length; i++ ) {
       if (props.location.pathname === fullPageLayoutRoutes[i]) {
         setIsFullPageLayout(true)
@@ -92,4 +97,4 @@ function AdminLayout(props){
   );
 }
 
-export default withRouter(AdminLayout);
+export default withRouter(App);

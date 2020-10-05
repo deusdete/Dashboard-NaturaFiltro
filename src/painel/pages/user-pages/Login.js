@@ -7,7 +7,7 @@ import { loginUser } from '../../../redux/actions/userAction'
 
 function  Login(props) {
   const [ email, setEmail ] = useState('');
-  const [ senha, setSenha ] = useState('');
+  const [ password, setPassword ] = useState('');
   const [ erros, setErros ] = useState({});
 
   const isFirstRun = useRef(true);
@@ -20,8 +20,8 @@ function  Login(props) {
   },[props.UI.errors])
 
   async function handleSubmit(){
-    console.log(email,senha)
-    props.loginUser({email, senha}, props.history)
+    console.log(email,password)
+    props.loginUser({email, password}, props.history)
   }
   return (
     <div>
@@ -36,16 +36,16 @@ function  Login(props) {
               <h6 className="font-weight-light">Faça login para continuar.</h6>
               <Form  className="pt-3">
                 <Form.Group>
-                  {erros.geral && 
+                  {erros.error && 
                     <Form.Control.Feedback style={{display: "block"}} type="invalid">
-                      {erros.geral}
+                      {erros.error}
                     </Form.Control.Feedback>
                   }
                 </Form.Group>
                 <Form.Group className="search-field">
                   <Form.Control 
                     type="email" 
-                    placeholder="Username" 
+                    placeholder="Email" 
                     onChange={e => setEmail(e.target.value)} 
                     size="lg" 
                     isInvalid={!!erros.email} 
@@ -58,12 +58,12 @@ function  Login(props) {
                   <Form.Control 
                     type="password" 
                     placeholder="Password" 
-                    onChange={e => setSenha(e.target.value)} 
+                    onChange={e => setPassword(e.target.value)} 
                     size="lg"
-                    isInvalid={!!erros.senha} 
+                    isInvalid={!!erros.password} 
                     className="h-auto" />
                   <Form.Control.Feedback type="invalid">
-                    {erros.senha}
+                    {erros.password}
                   </Form.Control.Feedback>
                 </Form.Group>
                 <div className="mt-3">
@@ -83,14 +83,6 @@ function  Login(props) {
                     </label>
                   </div>
                   <a href="!#" onClick={event => event.preventDefault()} className="auth-link text-black">Esqueceu a senha?</a>
-                </div>
-                {/* <div className="mb-2">
-                  <button type="button" className="btn btn-block btn-facebook auth-form-btn">
-                    <i className="mdi mdi-facebook mr-2"></i>Conecte-se usando o Facebook
-                  </button>
-                </div> */}
-                <div className="text-center mt-4 font-weight-light">
-                  Não possui uma conta? <Link to="/user-pages/register-1" className="text-primary">Criar</Link>
                 </div>
               </Form>
             </div>

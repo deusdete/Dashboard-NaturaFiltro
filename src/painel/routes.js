@@ -1,11 +1,12 @@
 import React, { Suspense, lazy } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+
 // import AuthRoute from '../utils/AuthRoute'
 
 
 import Spinner from './pages/shared/Spinner';
 
-const Dashboard = lazy(() => import('./pages/dashboard/Dashboard'));
+const Dashboard = lazy(() => import('./pages/dashboard'));
 
 const Buttons = lazy(() => import('./pages/basic-ui/Buttons'));
 const Dropdowns = lazy(() => import('./pages/basic-ui/Dropdowns'));
@@ -28,18 +29,23 @@ const Register1 = lazy(() => import('./pages/user-pages/Register'));
 
 const BlankPage = lazy(() => import('./pages/user-pages/BlankPage'));
 
-const MinhasEmpresas = lazy(() => import('./pages/empresa/MinhasEmpresas'));
-const AdicionaEmpresa = lazy(() => import('./pages/empresa/AdicionaEmpresa'));
-const Clientes = lazy(() => import('./pages/clientes'));
-const Perfil = lazy(() => import('./pages/usuario/Perfil'));
+const Filtros = lazy(() => import('./pages/filtros'));
+const AdicionarFiltro = lazy(() => import('./pages/filtros/AdicionarFiltro'));
+const QRCodes = lazy(() => import('./pages/qrcodes'));
+const AdicioanrQrCode = lazy(() => import('./pages/qrcodes/AdicioanrQrCode'));
+const QrScanned = lazy(() => import('./pages/analytics/QrScanned'));
 
 
 export default function AppRoutes(){
   return (
       <Suspense fallback={<Spinner/>}>
         <Switch>
-          <Route exact path="/dashboard" component={ BlankPage } />
-
+          <Route exact path="/" component={ Dashboard } />
+          <Route exact path="/filtros" component={ Filtros } />
+          <Route exact path="/filtro/adicionar" component={ AdicionarFiltro } />
+          <Route exact path="/qrcodes" component={ QRCodes } />
+          <Route exact path="/qrcode/adicionar" component={ AdicioanrQrCode } />
+          <Route exact path="/analytics" component={ QrScanned } />
           <Route exact path="/basic-ui/buttons" component={ Buttons } />
           <Route exact path="/basic-ui/dropdowns" component={ Dropdowns } />
           <Route exact path="/basic-ui/typography" component={ Typography } />
@@ -52,21 +58,9 @@ export default function AppRoutes(){
 
           <Route exact path="/charts/chart-js" component={ ChartJs } />
 
+          <Route exact path="/login" component={ Login }  />
+          
 
-          {/* <AuthRoute exact path="/user-pages/login-1" component={ Login }  />
-          <AuthRoute exact path="/user-pages/register-1" component={ Register1 }/> */}
-
-          <Route exact path="/user-pages/error-404" component={ Error404 } />
-          <Route exact path="/user-pages/error-500" component={ Error500 } />
-
-          <Route exact path="/user-pages/blank-page" component={ BlankPage } />
-
-          <Route exact path="/cliente/todas" component={ Clientes } />
-          <Route exact path="/cliente/adiciona" component={ BlankPage } />
-
-          <Route exact path="/usuario/usuarios" component={ BlankPage } />
-          <Route exact path="/usuario/adiciona" component={ AdicionaEmpresa } />
-          <Route exact path="/usuario/meu-perfil" component={ BlankPage } />
         </Switch>
       </Suspense>
   );

@@ -43,8 +43,9 @@ class Sidebar extends Component {
     });
 
     const dropdownPaths = [
-      {path:'/cliente', state: 'clienteUiMenuOpen'},
-      {path:'/usuario', state: 'usuarioUiMenuOpen'},
+      {path:'/filtro', state: 'filtrosUiMenuOpen'},
+      {path:'/qrcode', state: 'qrcodesUiMenuOpen'},
+      {path:'/analytics', state: 'analyticsUiMenuOpen'},
       {path:'/basic-ui', state: 'basicUiMenuOpen'},
       {path:'/form-elements', state: 'formElementsMenuOpen'},
       {path:'/tables', state: 'tablesMenuOpen'},
@@ -61,12 +62,12 @@ class Sidebar extends Component {
  
   } 
   render () {
-    const { nome, imagemUrl, tipoConta, loading } = this.props;
+    const { name, loading } = this.props;
     return (
       <nav className="sidebar sidebar-offcanvas" id="sidebar">
         <div className="text-center sidebar-brand-wrapper d-flex align-items-center">
-          <a className="sidebar-brand brand-logo" href="index.html"><img src={require("../../../assets/images/Ativo-1@4x.png")} alt="logo" /></a>
-          <a className="sidebar-brand brand-logo-mini pt-3" href="index.html"><img src={require("../../assets/images/logo-mini.svg" )} alt="logo" /></a>
+          <a className="sidebar-brand brand-logo" href="index.html"><img src="" alt="logo" /></a>
+          <a className="sidebar-brand brand-logo-mini pt-3" href="index.html"><img src="" alt="logo" /></a>
         </div>
         {loading ? <SideBarLoading/> : 
         <ul className="nav">
@@ -76,10 +77,10 @@ class Sidebar extends Component {
                 <Dropdown.Toggle className="nav-link user-switch-dropdown-toggler p-0 toggle-arrow-hide bg-transparent border-0 w-100">
                   <div className="d-flex justify-content-between align-items-start">
                     <div className="profile-image">
-                     {imagemUrl &&  <img src={imagemUrl} alt="profile" />}
+                     {/* {imagemUrl &&  <img src={imagemUrl} alt="profile" />} */}
                     </div>
                     <div className="text-left ml-3">
-                      <p className="profile-name">{this.getNome(nome)}</p>
+                      <p className="profile-name">{name}</p>
                       <small className="designation text-muted text-small">Administrador</small>
                       <span className="status-indicator online"></span>
                     </div>
@@ -176,15 +177,41 @@ class Sidebar extends Component {
               </ul>
             </Collapse>
           </li> */}
-          <li className={ this.isPathActive('/cliente') ? 'nav-item active' : 'nav-item' }>
-            <div className={ this.state.clienteUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('clienteUiMenuOpen') } data-toggle="collapse">
+          <li className={ this.isPathActive('/filtros') ? 'nav-item active' : 'nav-item' }>
+            <div className={ this.state.filtrosUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('filtrosUiMenuOpen') } data-toggle="collapse">
               <i className="mdi mdi-storefront menu-icon"></i>
-              <span className="menu-title">Clientes</span>
+              <span className="menu-title">Filtros</span>
               <i className="menu-arrow"></i>
             </div>
-            <Collapse in={ this.state.clienteUiMenuOpen }>
+            <Collapse in={ this.state.filtrosUiMenuOpen }>
               <ul className="nav flex-column sub-menu">
-                <li className="nav-item"> <Link className={ this.isPathActive('/cliente/todas') ? 'nav-link active' : 'nav-link' } to="/cliente/todas"><i className="mdi mdi-account-group menu-icon"></i>Todos</Link></li>
+                <li className="nav-item"> <Link className={ this.isPathActive('/filtros') ? 'nav-link active' : 'nav-link' } to="/filtros"><i className="mdi mdi-account-group menu-icon"></i>Meus filtros</Link></li>
+                <li className="nav-item"> <Link className={ this.isPathActive('/filtro/adicionar') ? 'nav-link active' : 'nav-link' } to="/filtro/adicionar"><i className="mdi mdi-account-group menu-icon"></i>Adicionar</Link></li>
+              </ul>
+            </Collapse>
+          </li>
+          <li className={ this.isPathActive('/qrcode') ? 'nav-item active' : 'nav-item' }>
+            <div className={ this.state.qrcodesUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('qrcodesUiMenuOpen') } data-toggle="collapse">
+              <i className="mdi mdi-storefront menu-icon"></i>
+              <span className="menu-title">QR Codes</span>
+              <i className="menu-arrow"></i>
+            </div>
+            <Collapse in={ this.state.qrcodesUiMenuOpen }>
+              <ul className="nav flex-column sub-menu">
+                <li className="nav-item"> <Link className={ this.isPathActive('/qrcodes') ? 'nav-link active' : 'nav-link' } to="/qrcodes"><i className="mdi mdi-account-group menu-icon"></i>QR Codes</Link></li>
+                <li className="nav-item"> <Link className={ this.isPathActive('/qrcode/adicionar') ? 'nav-link active' : 'nav-link' } to="/qrcode/adicionar"><i className="mdi mdi-account-group menu-icon"></i>Adicionar</Link></li>
+              </ul>
+            </Collapse>
+          </li>
+          <li className={ this.isPathActive('/analytics') ? 'nav-item active' : 'nav-item' }>
+            <div className={ this.state.analyticsUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('analyticsUiMenuOpen') } data-toggle="collapse">
+              <i className="mdi mdi-storefront menu-icon"></i>
+              <span className="menu-title">Analytics</span>
+              <i className="menu-arrow"></i>
+            </div>
+            <Collapse in={ this.state.analyticsUiMenuOpen }>
+              <ul className="nav flex-column sub-menu">
+                <li className="nav-item"> <Link className={ this.isPathActive('/analytics') ? 'nav-link active' : 'nav-link' } to="/analytics"><i className="mdi mdi-account-group menu-icon"></i>QR Escaneados</Link></li>
               </ul>
             </Collapse>
           </li>
@@ -218,9 +245,7 @@ class Sidebar extends Component {
 
 }
 const mapStateToProps = (state) => ({
-  nome: state.user.nome,
-  imagemUrl: state.user.imagemUrl,
-  tipoConta: state.user.tipoConta,
+  name: state.user.name,
   loading: state.user.loading
 })
 export default connect(mapStateToProps)(withRouter(Sidebar));

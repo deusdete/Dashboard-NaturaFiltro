@@ -133,8 +133,7 @@ function Navbar(props) {
             <li className="nav-item  nav-profile border-0">
               <Dropdown alignRight>
                 <Dropdown.Toggle className="nav-link count-indicator bg-transparent">
-                  <span className="profile-text">{getNome(props.nome)}</span>
-                  {props.imagemUrl && <img className="img-xs rounded-circle" src={props.imagemUrl} alt="Profile" />}
+                  <span className="profile-text">{props.name}</span>
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="preview-list navbar-dropdown pb-3">
                  <Dropdown.Item className="dropdown-item p-0 preview-item d-flex align-items-center border-bottom" href="!#" onClick={evt =>evt.preventDefault()}>
@@ -175,8 +174,7 @@ function Navbar(props) {
     );
 }
 const mapStateToProps = (state) => ({
-  nome: state.user.nome,
-  imagemUrl: state.user.imagemUrl,
+  name: state.user.name,
   loading: state.user.loading,
 })
 
