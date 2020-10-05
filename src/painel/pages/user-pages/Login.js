@@ -30,7 +30,7 @@ function  Login(props) {
           <div className="col-lg-4 mx-auto">
             <div className="auth-form-light text-left py-5 px-4 px-sm-5">
               <div className="brand-logo">
-                <img src={require("../../assets/images/logo.svg")} alt="logo" />
+                <img src={require("../../assets/images/natura-logo.png")} alt="logo" />
               </div>
               <h4>Olá, vamos começar </h4>
               <h6 className="font-weight-light">Faça login para continuar.</h6>
