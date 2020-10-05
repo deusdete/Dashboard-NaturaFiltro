@@ -25,7 +25,7 @@ function Navbar(props) {
     return (
       <nav className="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
         <div className="navbar-menu-wrapper d-flex align-items-center justify-content-between">
-        <a className="navbar-brand brand-logo-mini align-self-center d-lg-none" href="!#" onClick={evt =>evt.preventDefault()}><img src={require("../../assets/images/icone-natura.png")} alt="logo" /></a>
+        <a className="navbar-brand brand-logo-mini align-self-center d-lg-none" href="!#" onClick={evt =>evt.preventDefault()}><img src={require("../../assets/images/icone-natura.png")} style={{width: 38, height:38}} alt="logo" /></a>
           <button className="navbar-toggler navbar-toggler align-self-center" type="button" onClick={ () => document.body.classList.toggle('sidebar-icon-only') }>
             <i className="mdi mdi-menu"></i>
           </button>
